@@ -24,9 +24,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const adsenseId = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID;
   return {
     metadataBase: new URL(siteUrl),
-    applicationName: "World of Anterra Wiki",
+    applicationName: siteConfig.name,
     title: { default: "World of Anterra Wiki", template: "%s" },
-    description: "Fan-made World of Anterra wiki covering races, bosses, builds, crafting, exploration, and progression guides.",
+    description: siteConfig.description,
     manifest: "/manifest.json",
     icons: {
       icon: [
@@ -38,8 +38,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "World of Anterra" },
     formatDetection: { telephone: false },
-    openGraph: { type: "website", locale, url: siteUrl, siteName: siteConfig.name, images: [{ url: image }] },
-    twitter: { card: "summary_large_image", images: [image] },
+    openGraph: { type: "website", locale, url: siteUrl, siteName: siteConfig.name, title: "World of Anterra Wiki", description: siteConfig.description, images: [{ url: image, width: 1500, height: 844, alt: "World of Anterra key art" }] },
+    twitter: { card: "summary_large_image", title: "World of Anterra Wiki", description: siteConfig.description, images: [image] },
     ...(adsenseId ? { other: { "google-adsense-account": adsenseId } } : {}),
   };
 }
@@ -56,6 +56,8 @@ export default async function LocaleLayout({ children, params }: { children: Rea
     url: siteUrl,
     logo: `${siteUrl}/android-chrome-512x512.png`,
     image: `${siteUrl}/images/hero.webp`,
+    description: siteConfig.description,
+    sameAs: ["https://www.anterrarpg.com/", siteConfig.gameUrl, siteConfig.social?.discord, siteConfig.social?.youtube, siteConfig.social?.steamCommunity].filter(Boolean),
   };
 
   const adsenseId = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID;
