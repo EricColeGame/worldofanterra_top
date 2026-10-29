@@ -1,0 +1,109 @@
+export const metadata = {
+  title: "Motor de juego de World of Anterra: dentro del stack tecnológico personalizado de 81monkeys",
+  description: "Lo que sabemos sobre el motor de juego de World of Anterra: renderizado personalizado, diálogo basado en nodos, IA de NPC, herramientas de mundo procedural y la tecnología detrás del RPG de 81monkeys.",
+  category: "technical",
+  date: "2026-10-27",
+}
+
+## Lo que 81monkeys ha confirmado realmente sobre el motor de juego de World of Anterra
+
+Pregunta a la mayoría de estudios indie qué impulsa su RPG de mundo abierto y obtendrás una respuesta de una palabra: Unity o Unreal. Pregunta a 81monkeys por el **motor de juego de World of Anterra** y la respuesta es mucho más interesante: un stack construido en torno a un pipeline de renderizado personalizado, herramientas internas de creación de mundos y un sistema de diálogo basado en nodos escrito desde cero. Eso importa porque la tecnología explica las promesas de diseño: NPC con rutinas diarias, sombras que indican la hora y terreno procedural que se mezcla con escenarios hechos a mano. A continuación, todo lo confirmado públicamente sobre el **motor de juego de World of Anterra**, qué permite cada pieza y qué significa para los jugadores.
+
+Lo primero que hay que aclarar: 81monkeys no ha puesto marca públicamente a su motor como hace un estudio cuando anuncia "hecho en Unreal Engine 5". Lo que el equipo ha compartido es una lista de características tecnológicas en su [página de campaña de Kickstarter de World of Anterra](https://www.kickstarter.com/projects/81monkeys/world-of-anterra), y esa lista se lee como una cadena de herramientas hecha a medida más que como una licencia lista para usar.
+
+| Componente | Confirmado por 81monkeys | Qué sugiere |
+|---|---|---|
+| Renderizado | Pipeline de renderizado personalizado | Trabajo gráfico interno en lugar de un renderizador estándar |
+| Creación de mundos | Herramientas de creación de mundos | Autoría propietaria de terreno y niveles |
+| Diálogo | Sistema de diálogo basado en nodos con bases de conocimiento compartidas | Herramientas narrativas personalizadas, no un plugin |
+| IA | Rutinas de NPC e IA | Una capa de simulación basada en horarios |
+| Personajes y objetos | Sistemas de capas de assets | Equipamiento modular, estilo paper-doll |
+| Nombre y versión del motor | No divulgados | No se puede confirmar públicamente |
+
+Esa cadena de herramientas la está construyendo un equipo cuyos créditos abarcan más de 25 años y más de 30 títulos lanzados, incluido trabajo en Hearthstone, Outer Wilds, Bomberman Live y la trilogía de Spyro the Dragon para GBA. Que un grupo con ese bagaje elija programar a mano el renderizado y las herramientas de mundo dice algo sobre lo estrechamente que los sistemas necesitan comunicarse entre sí.
+
+## Renderizado: cómo el motor de juego de World of Anterra gestiona la luz y la sombra
+
+La iluminación dinámica es la prueba más visible de que el **motor de juego de World of Anterra** está haciendo un trabajo pesado. El objetivo declarado del estudio es una distribución y distorsión natural de las sombras, donde las sombras se comportan como objetos 3D que interactúan con superficies 3D. Varias fuentes de luz proyectan sus propias sombras simultáneamente: el sol, la luna, velas parpadeantes, la antorcha en tu mano, incluso una flecha en llamas cruzando la pantalla de noche.
+
+La parte ingeniosa es cómo eso alimenta la jugabilidad. Como los ángulos de las sombras cambian según tu ubicación en el mundo, puedes leer la hora del día simplemente mirando el suelo a tu alrededor. Es una característica de renderizado haciendo trabajo narrativo: hace que una región se sienta geográficamente real sin un solo reloj en la interfaz.
+
+| Característica de renderizado | Lo que los jugadores ven realmente |
+|---|---|
+| Ciclo día/noche | Las sombras se alargan y rotan; la hora se puede leer por el ángulo de la sombra |
+| Varios proyectores de sombra simultáneos | Sol, luna, velas, antorcha en mano y proyectiles proyectan sombras cada uno |
+| Ángulos de sombra según la ubicación | La misma hora se ve distinta según dónde estés |
+| Clima y efectos ambientales | Tormentas, olas, movimiento del agua, superficies reflectantes |
+| Vida ambiental y partículas | Insectos, animales pequeños, efectos de hechizos y fuerzas mágicas |
+
+El equipo también ha dicho que pretende exigir mucho al trabajo de efectos: clima dramático, fuerzas mágicas, agua y reflejos, todo en el mismo fotograma. A nivel técnico, ese es el argumento clásico para tener tu propio renderizador: puedes presupuestar docenas de luces que proyectan sombras en una escena en lugar de pelear con un pipeline de propósito general.
+
+## Herramientas de creación de mundos y generación procedural
+
+El mapa de Anterra tiene semilla, y el **motor de juego de World of Anterra** es lo que permite que el contenido generado y el hecho a mano ocupen el mismo espacio sin una costura visible. El objetivo de diseño declarado es que los jugadores no puedan distinguir qué ubicaciones fueron creadas por un humano y cuáles fueron ensambladas por las herramientas.
+
+En la práctica, eso significa que los grandes anclajes narrativos —pueblos, castillos, momentos principales de la historia— están hechos a mano, mientras que los encuentros más pequeños, como la cueva de un ermitaño o un campamento de bandidos, pueden colocarse dinámicamente para ajustarse a tu partida concreta. Todo tiene una semilla vinculada a tu guardado, así que tu viaje por Anterra es único para tu partida.
+
+| Tipo de contenido | Cómo se produce | Impacto para el jugador |
+|---|---|---|
+| Pueblos, castillos, centros de misiones | Hecho a mano | Ritmo autorado y precisión del lore |
+| Cuevas de ermitaños, campamentos de bandidos | Colocados dinámicamente | Encuentros distintos en cada partida |
+| Terreno y regiones | Procedural, con semilla para tu mapa | Un viaje único para tu archivo de guardado |
+| Puntos de interés | Integrados en el terreno generado | Sin costura visible entre lo creado y lo generado |
+
+El mundo abierto en sí funciona en tiempo real y no se pausa a menos que tú lo pauses. Los enemigos pueden cazarte por el mapa y puede que necesites correr y esconderte. Cada paso es una ubicación a la que puedes acercarte para recolectar, cazar o luchar, pero también puedes simplemente caminar entre lugares, lo cual es una afirmación técnica significativa sobre cómo se gestionan el streaming y la escala del mundo.
+
+## El motor de diálogo: conversaciones basadas en nodos y bases de conocimiento compartidas
+
+El diálogo es donde el **motor de juego de World of Anterra** deja de ser invisible. El estudio describe un sistema de diálogo basado en nodos en el que los NPC recurren tanto a diálogos personales únicos como a bases compartidas de conocimiento local, regional y mundial. En términos simples: un aldeano puede conocer un rumor de un pueblo vecino sin que un guionista haya escrito a mano esa línea exacta para ese personaje exacto.
+
+El lado orientado al jugador es un sistema basado en preguntas. Siempre haces preguntas en lugar de elegir entre respuestas prefabricadas, puedes preguntar en cualquier orden y puedes escribir tus propias palabras. Escribir abre la puerta a acertijos, misterios, secretos y easter eggs: mecánicas que serían imposibles sin el grafo de nodos subyacente.
+
+| Diálogo tradicional en RPG | Diálogo en World of Anterra |
+|---|---|
+| Árboles de diálogo fijos con opciones predefinidas | Basado en preguntas: el jugador siempre pregunta |
+| Volcados largos de texto y muros de exposición | Líneas concisas con el lore intacto |
+| El orden de las ramas suele estar limitado | Preguntas en cualquier orden, además de entrada escrita |
+| Leer es la única interacción | Escribir resuelve acertijos y descubre secretos |
+| Cada NPC necesita líneas totalmente escritas | Líneas únicas más bases compartidas locales/regionales/globales |
+
+Los informes de la comunidad de los habituales Discord Developer Firesides del estudio son el mejor lugar para oír al equipo hablar de estos sistemas, y las sesiones grabadas se archivan en un canal dedicado para los backers que se las pierdan.
+
+## IA de NPC, capas de assets y personalización de personajes
+
+Dos sistemas más completan la lista tecnológica confirmada: rutinas de NPC e IA, y capas de assets. El primero es lo que hace que los pueblos se sientan vivos: los NPC siguen horarios diarios mientras responden dinámicamente a eventos del mundo y al jugador. El segundo es lo que hace que el equipamiento se sienta físico en lugar de estadístico.
+
+| Sistema de capas | Qué controla |
+|---|---|
+| Personaje base | Tono de piel, complexión, tipo de cuerpo |
+| Pelo y vello facial | Estilos animados dinámicamente |
+| Equipamiento | Capas en casi cualquier combinación, sin objetos bloqueados por género |
+| Estado del arma | Envainada versus empuñada, con subtipos visualmente distintos |
+| Estado de movimiento | Correr versus caminar cambia cómo se anima el equipo puesto |
+
+Esa última fila es el detalle que revela hasta dónde llegan las capas: una espada de hierro y una espada de fuego son visualmente diferentes, y la misma capa anima de forma distinta al caminar y al correr. El ejemplo favorito del equipo es la poción de invisibilidad: puedes desaparecer, pero tendrás que quitarte la ropa para desaparecer de verdad, porque los objetos equipados son su propia capa renderizada.
+
+## Objetivos de rendimiento, plataformas y arquitectura cooperativa
+
+81monkeys ha declarado que World of Anterra se está desarrollando desde cero tanto para consola como para escritorio. Esa única decisión repercute en todo el diseño del **motor de juego de World of Anterra**: la interfaz se apoya en objetos fieles al mundo e iconos intuitivos en lugar de menús y listas de texto, de modo que la gestión de objetos —mover, equipar, comerciar, soltar— ocurre sin abrir una sola pantalla. Un HUD mantiene cada acción accesible mientras deja el mundo visualmente limpio.
+
+El multijugador se está construyendo para situarse encima de la simulación para un jugador en lugar de reemplazarla. Los jugadores entran y salen de los mundos de los demás, se aventuran juntos o por separado e intercambian bienes, con eventos narrativos especiales del mundo que se activan cuando alguien abre una grieta hacia otro mundo.
+
+- **Plataformas:** PC, Mac y consolas, con los backers eligiendo su versión preferida en el lanzamiento.
+- **Localización:** traducción profesional antes del lanzamiento, además de herramientas de traducción comunitaria; el juego anterior del estudio se lanzó en 10 idiomas.
+- **Cooperativo:** incorporación fluida con su propia progresión y recompensas desbloqueables vinculadas a los eventos de grieta.
+- **Combate:** combate por grupos simplificado basado en cuadrícula que admite peleas de bajo riesgo con un solo botón y encuentros tácticos más profundos contra jefes.
+
+## FAQ
+
+**¿Qué motor de juego usa World of Anterra?**
+81monkeys no ha nombrado públicamente un motor comercial. La lista tecnológica confirmada —un pipeline de renderizado personalizado, herramientas de creación de mundos, un sistema de diálogo basado en nodos, rutinas de NPC e IA, y capas de assets— apunta a una cadena de herramientas interna y muy personalizada para el motor de juego de World of Anterra.
+
+**¿El motor de juego de World of Anterra es de creación propia o con licencia?**
+Las características descritas son propietarias: un renderizador personalizado, herramientas dedicadas de autoría de mundos y un grafo de diálogo con bases de conocimiento compartidas. No se ha divulgado si se asienta sobre una base con licencia o si es completamente desde cero.
+
+**¿Cómo gestiona el motor la generación procedural?**
+Mezcla contenido hecho a mano y contenido generado. Las ubicaciones críticas para la narrativa se crean a mano, mientras que los encuentros más pequeños se colocan dinámicamente y con una semilla vinculada a tu guardado, así que dos jugadores no ven el mismo diseño de mapa.
+
+**¿La tecnología admite cooperativo y consolas?**
+Sí en ambos casos. El juego se construye desde cero para consola y escritorio, y el cooperativo está diseñado para que los jugadores entren y salgan de los mundos de los demás mientras la simulación para un jugador sigue funcionando.

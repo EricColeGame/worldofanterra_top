@@ -1,0 +1,126 @@
+export const metadata = {
+  title: "Requisitos del sistema de World of Anterra: ¿Puede tu PC ejecutar este RPG hecho a mano?",
+  description: "Un análisis práctico de los requisitos del sistema de World of Anterra, lo que realmente exige el motor y cómo comprobar tu PC antes de comprar.",
+  category: "technical",
+  date: "2026-10-27",
+}
+
+## Por qué los requisitos del sistema de World of Anterra merecen una segunda mirada
+
+Pocas cosas matan la emoción de un nuevo RPG más rápido que una primera hora con tirones. Si planeas colarte por criptas, descansar en tabernas y sobrevivir a las magias inestables de Anterra, los **requisitos del sistema de World of Anterra** son lo primero que conviene revisar, antes de hacer clic en comprar. Esta guía desglosa lo que el motor del juego realmente exige a tu hardware, cómo verificar tu propio PC en unos cinco minutos y cómo los **requisitos del sistema de World of Anterra** se traducen en ajustes reales que puedes modificar.
+
+A primera vista, World of Anterra parece el tipo de juego que debería funcionar en cualquier cosa. Es un RPG de mundo abierto hecho a mano y basado en sprites, y su página de la tienda presume con orgullo de ser "100% hecho por humanos". Esa reputación de dibujado a mano lleva a muchos jugadores a suponer que los requisitos son triviales.
+
+Esa suposición solo es medio cierta. Bajo el arte de píxeles se esconde un motor personalizado de iluminación en tiempo real, shaders de agua, clima dinámico, ciclos de día y noche, y un sistema de animación por capas que compone el equipo sobre los personajes al vuelo. Son características que tocan la GPU, y son la razón por la que aún vale la pena revisar los requisitos.
+
+### La versión corta
+
+- El estilo artístico sugiere requisitos bajos; el trabajo de iluminación y shaders los sube un escalón.
+- Las exigencias de almacenamiento y CPU probablemente sean modestas para un RPG 2D de esta escala.
+- Las cifras publicadas pueden cambiar entre versiones, así que confírmalas siempre contra la ficha activa de la tienda.
+
+## Dónde encontrar los requisitos oficiales del sistema de World of Anterra
+
+Antes de confiar en cualquier sitio agregador, ve a la fuente. La [página oficial de World of Anterra en Steam](https://store.steampowered.com/app/2402470/World_of_Anterra/) es donde el desarrollador publica la ficha de requisitos mínimos y recomendados, y es la versión que realmente cuenta. Cuando ese bloque de la barra lateral derecha se actualiza, todo lo demás en internet queda desfasado por defecto.
+
+| Fuente | Qué obtienes | Cuánto confiar en ella |
+|---|---|---|
+| Página de la tienda de Steam (barra lateral) | Requisitos mínimos y recomendados oficiales | Máxima — controlada por el desarrollador |
+| Noticias y notas de parches de Steam | Cambios en rendimiento, trabajo del motor, nuevos efectos | Alta — oficial pero fácil de pasar por alto |
+| Demo gratuita o versión de prueba | Prueba directa y práctica en tu propia máquina | Máxima para *tu* PC en concreto |
+| Debates de la comunidad de Steam | Experiencia de jugadores con hardware similar | Media — anecdótica, pero útil |
+| Sitios agregadores de requisitos | Resúmenes rápidos, a menudo extraídos y desactualizados | De baja a media — verifica antes de fiarte |
+
+Un hábito práctico: revisa la página de la tienda y luego el feed de noticias. Si un parche reciente añadió nuevos efectos de iluminación o clima, el nivel recomendado puede haberse movido silenciosamente.
+
+## Qué determina realmente los requisitos del sistema de World of Anterra
+
+La mayor parte de la confusión en torno a los requisitos viene de tratar una lista de especificaciones como un único número. En realidad, distintas partes de tu PC se encargan de distintas tareas. Así se traducen las características principales del juego al hardware.
+
+| Característica del motor | Hardware en el que se apoya | Qué significa para tu equipo |
+|---|---|---|
+| Motor personalizado de iluminación en tiempo real | GPU | El mayor factor individual; una GPU integrada débil suele ser el cuello de botella habitual |
+| Shaders de agua y efectos especiales | GPU | Se beneficia de actualizaciones de controladores y APIs gráficas actuales |
+| Clima dinámico y ciclos de día y noche | GPU + CPU | Trabajo continuo en segundo plano; puede causar picos en el tiempo de fotograma en chips más antiguos |
+| Sistema de animación por capas (equipo sobre los personajes) | CPU + RAM | Escala con el tamaño del grupo y el número de PNJ en pantalla |
+| Gran mundo abierto con objetos rompibles y contenedores | Almacenamiento + RAM | Un SSD reduce notablemente las cargas y los tirones por streaming de recursos |
+| Interfaz táctil basada en iconos | Insignificante | Esencialmente gratis en cualquier sistema moderno |
+
+### Un orden de prioridades sensato
+
+Si vas a mejorar una pieza a la vez, gasta en este orden:
+
+1. **Tarjeta gráfica** — el trabajo de iluminación y shaders es donde vive la identidad visual.
+2. **SSD** — streaming de mundo abierto más interacciones frecuentes con contenedores y el entorno.
+3. **RAM** — 16 GB es una base moderna cómoda para RPG de esta magnitud.
+4. **CPU** — importa sobre todo si llevas un grupo completo con mucha animación por capas.
+
+Los informes de la comunidad sobre RPG 2D animados a mano similares sugieren que los jugadores con gráficos integrados antiguos suelen obtener resultados jugables a resoluciones más bajas, pero los resultados varían mucho según la versión del controlador. Tómalo como experiencia de jugadores, no como una garantía.
+
+## Cómo comprobar tu propio PC en cinco minutos
+
+No necesitas una suite de benchmarks. Windows incluye todo lo necesario para leer tu propio hardware.
+
+| Componente | Dónde mirar en Windows | Qué anotar |
+|---|---|---|
+| CPU | Configuración → Sistema → Acerca de | Nombre del modelo y número de núcleos |
+| RAM | Configuración → Sistema → Acerca de, o Administrador de tareas → Rendimiento | GB totales y velocidad |
+| GPU | Administrador de tareas → Rendimiento → GPU | Modelo exacto y VRAM dedicada |
+| Almacenamiento | Configuración → Sistema → Almacenamiento | Espacio libre y si es un SSD |
+| Versión del controlador | App del fabricante de la GPU o Administrador de dispositivos | Fecha — actualiza si tiene más de unos meses |
+
+### Una rutina rápida en tres pasos
+
+- **Paso 1:** Anota el modelo de tu GPU. Este es el número que decide la mayor parte del resultado.
+- **Paso 2:** Compáralo con el nivel recomendado de la página de la tienda, no con el mínimo. El nivel mínimo describe "arranca", no "se siente bien".
+- **Paso 3:** Comprueba el espacio libre en disco y confirma que el juego está instalado en un SSD, no en un disco mecánico.
+
+Si tu GPU se sitúa entre los niveles mínimo y recomendado, espera jugar a una resolución más baja o con algunos efectos reducidos. Eso es normal y no significa que el juego esté roto.
+
+## Ajustes que hacen la mayor parte del trabajo
+
+Una vez dentro del juego, un puñado de opciones concentran la mayor parte del peso del rendimiento. Las etiquetas exactas del menú pueden variar entre versiones, pero las categorías son coherentes entre juegos construidos con iluminación 2D en tiempo real.
+
+| Ajuste | Impacto en el rendimiento | Recomendación para PCs de gama media |
+|---|---|---|
+| Resolución / escala de renderizado | Muy alto | Baja a 1080p o al 90 % de escala antes de tocar cualquier otra cosa |
+| Calidad de iluminación | Alto | Medio suele ser indistinguible durante el juego normal |
+| Detalle de shaders de agua | De medio a alto | Bájalo si tienes tirones cerca de ríos y costas |
+| Densidad de efectos climáticos | Medio | Redúcela si las tormentas causan caídas de fotogramas |
+| Calidad de sombras y efectos | Medio | Media; estos se acumulan con los costes de iluminación |
+| V-Sync / límite de fotogramas | Bajo | Activa un límite para suavizar los tiempos de fotograma y reducir el calor |
+| Ventana vs. pantalla completa | Bajo | La pantalla completa suele rendir ligeramente mejor |
+
+Cambia un ajuste a la vez y recorre una zona concurrida —un pueblo o un evento climático— en lugar de juzgar desde un rincón tranquilo del mapa. Los requisitos del sistema de World of Anterra que ves publicados describen el hardware, pero son los ajustes los que cierran la brecha.
+
+## Solución de problemas cuando el rendimiento no coincide con la ficha de requisitos
+
+A veces tu PC supera el listón y el juego sigue fallando. Estos son los culpables habituales.
+
+| Síntoma | Causa probable | Solución a probar |
+|---|---|---|
+| Tirones al entrar en zonas nuevas | Streaming de recursos desde una unidad lenta | Mueve la instalación a un SSD |
+| Caídas de fotogramas durante tormentas o de noche | Iluminación y efectos climáticos acumulándose | Baja la iluminación y la densidad climática |
+| Uso bajo de GPU pero FPS bajos | Límite de fotogramas, V-Sync o un límite en la CPU | Desactiva V-Sync, sube el límite, cierra apps en segundo plano |
+| Cierres inesperados al iniciar | Controlador de GPU desactualizado | Actualiza al último controlador del fabricante |
+| Portátil que se sobrecalienta y rinde menos | Límites térmicos bajo carga sostenida | Limita los fotogramas y mejora la ventilación |
+| Texto borroso o problemas de escala de la interfaz | Desajuste de resolución | Ejecuta a resolución nativa en pantalla completa |
+
+Si una solución no ayuda, verifica los archivos del juego a través de Steam antes de reinstalar. Es más rápido y resuelve una sorprendente cantidad de comportamientos extraños.
+
+## Preguntas frecuentes
+
+**¿Son altos los requisitos del sistema de World of Anterra para un juego 2D?**
+Son moderados más que altos. El arte dibujado a mano mantiene baja la memoria de texturas, pero el motor de iluminación en tiempo real, los shaders de agua y el clima dinámico añaden un coste de GPU que un juego puramente de píxeles no tendría.
+
+**¿Puedo ejecutar World of Anterra en un portátil con gráficos integrados?**
+Posiblemente, a resolución reducida y con ajustes de iluminación más bajos. Los informes de la comunidad sugieren que depende mucho de la GPU integrada concreta y de la versión del controlador, así que prueba una demo o una versión de prueba antes de comprometerte, si puedes.
+
+**¿Cambiarán los requisitos del sistema de World of Anterra durante el desarrollo?**
+Pueden cambiar. El trabajo de rendimiento, los nuevos efectos y las actualizaciones del motor modifican las cifras publicadas, y por eso la ficha activa de Steam —no un resumen en caché— es la versión en la que confiar.
+
+**¿Necesito un SSD para jugar?**
+Un SSD no es estrictamente obligatorio, pero este es un juego de mundo abierto con muchos contenedores, objetos rompibles e interacción con el entorno. Instalarlo en un SSD es la mejora individual más barata para cargas más suaves y menos tirones.
+
+**¿Cuánta RAM debería tener?**
+16 GB es una base moderna cómoda para un RPG de esta magnitud, y deja margen para un navegador o una app de chat ejecutándose junto al juego.

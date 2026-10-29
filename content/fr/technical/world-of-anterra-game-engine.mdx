@@ -1,0 +1,109 @@
+export const metadata = {
+  title: "Moteur de jeu de World of Anterra : dans les coulisses de la pile technologique sur mesure de 81monkeys",
+  description: "Ce que l’on sait du moteur de jeu de World of Anterra : rendu personnalisé, dialogue nodulaire, IA des PNJ, outils procéduraux de création de monde et technologie derrière le RPG de 81monkeys.",
+  category: "technical",
+  date: "2026-10-27",
+}
+
+## Ce que 81monkeys a réellement confirmé au sujet du moteur de jeu de World of Anterra
+
+Demandez à la plupart des studios indépendants ce qui fait tourner leur RPG en monde ouvert, et vous obtenez une réponse en un mot : Unity ou Unreal. Demandez à 81monkeys ce qui anime le **moteur de jeu de World of Anterra**, et la réponse est bien plus intéressante — une pile technologique construite autour d’un pipeline de rendu personnalisé, d’outils internes de création de monde et d’un système de dialogue nodulaire écrit de zéro. Cela compte parce que la technologie explique les promesses de design : des PNJ avec des routines quotidiennes, des ombres qui indiquent l’heure et un terrain procédural qui se fond avec des éléments scéniques faits main. Voici tout ce qui est publiquement confirmé au sujet du **moteur de jeu de World of Anterra**, ce que chaque élément permet et ce que cela signifie pour les joueurs.
+
+La première chose à clarifier : 81monkeys n’a pas donné publiquement de nom à son moteur comme un studio l’annonce avec « développé sous Unreal Engine 5 ». Ce que l’équipe a partagé, c’est une liste de fonctionnalités techniques sur sa [page de campagne Kickstarter World of Anterra](https://www.kickstarter.com/projects/81monkeys/world-of-anterra), et cette liste ressemble à une chaîne d’outils sur mesure plutôt qu’à une licence prête à l’emploi.
+
+| Composant | Confirmé par 81monkeys | Ce que cela suggère |
+|---|---|---|
+| Rendu | Pipeline de rendu personnalisé | Travail graphique interne plutôt qu’un moteur de rendu standard |
+| Création du monde | Outils de création de monde | Création propriétaire de terrain et de niveaux |
+| Dialogue | Système de dialogue nodulaire avec des réserves de connaissances partagées | Outillage narratif sur mesure, pas un plugin |
+| IA | Routines et IA des PNJ | Une couche de simulation pilotée par emploi du temps |
+| Personnages et objets | Systèmes de superposition d’assets | Équipement modulaire, façon paper doll |
+| Nom et version du moteur | Non divulgués | Impossible à confirmer publiquement |
+
+Cette chaîne d’outils est développée par une équipe dont les références couvrent plus de 25 ans et plus de 30 titres commercialisés, avec notamment Hearthstone, Outer Wilds, Bomberman Live et la trilogie Spyro the Dragon sur GBA. Un groupe avec un tel parcours qui choisit de développer lui-même son rendu et ses outils de monde en dit long sur la nécessité pour les systèmes de communiquer étroitement entre eux.
+
+## Rendu : comment le moteur de jeu de World of Anterra gère la lumière et les ombres
+
+L’éclairage dynamique est la preuve la plus visible que le **moteur de jeu de World of Anterra** fait un gros travail. L’objectif annoncé du studio est une distribution et une déformation naturelles des ombres, où les ombres se comportent comme des objets 3D interagissant avec des surfaces 3D. Plusieurs sources lumineuses projettent leurs propres ombres simultanément — le soleil, la lune, des bougies vacillantes, la torche dans votre main, même une flèche enflammée traversant l’écran la nuit.
+
+L’astuce, c’est la façon dont cela nourrit le gameplay. Parce que les angles des ombres changent selon votre position dans le monde, vous pouvez lire l’heure du jour rien qu’en regardant le sol autour de vous. C’est une fonctionnalité de rendu qui fait un travail narratif : elle donne à une région une réalité géographique sans la moindre horloge d’interface.
+
+| Fonctionnalité de rendu | Ce que les joueurs voient réellement |
+|---|---|
+| Cycle jour/nuit | Les ombres s’allongent et tournent ; l’heure se lit à l’angle des ombres |
+| Plusieurs sources d’ombre simultanées | Soleil, lune, bougies, torche tenue et projectiles projettent chacun des ombres |
+| Angles d’ombre liés à la position | La même heure est différente selon l’endroit où vous vous tenez |
+| Météo et effets environnementaux | Tempêtes, vagues, mouvements de l’eau, surfaces réfléchissantes |
+| Vie ambiante et particules | Insectes, petits animaux, effets de sorts et forces magiques |
+
+L’équipe a aussi déclaré vouloir pousser fort le travail sur les effets — météo spectaculaire, forces magiques, eau et reflets dans la même image. Sur le plan technique, c’est l’argument classique en faveur d’un moteur de rendu maison : on peut budgéter des dizaines de lumières projetant des ombres dans une scène au lieu de se battre contre un pipeline généraliste.
+
+## Outils de création de monde et génération procédurale
+
+La carte d’Anterra est générée à partir d’une graine, et le **moteur de jeu de World of Anterra** est ce qui permet au contenu généré et au contenu fait main d’occuper le même espace sans couture visible. L’objectif de design annoncé est que les joueurs ne puissent pas distinguer les lieux créés par un humain de ceux assemblés par les outils.
+
+Concrètement, cela signifie que les grands ancrages narratifs — villes, châteaux, principaux jalons de l’histoire — sont faits main, tandis que les rencontres plus petites, comme la grotte d’un ermite ou un camp de bandits, peuvent être placées dynamiquement pour s’adapter à votre partie. Tout est généré à partir d’une graine liée à votre sauvegarde, de sorte que votre voyage à travers Anterra est unique à votre partie.
+
+| Type de contenu | Comment il est produit | Impact pour le joueur |
+|---|---|---|
+| Villes, châteaux, hubs de quêtes | Faits main | Rythme maîtrisé et fidélité au lore |
+| Grottes d’ermites, camps de bandits | Placés dynamiquement | Des rencontres différentes à chaque partie |
+| Terrain et régions | Procéduraux, générés à partir de la graine de votre carte | Un voyage unique à votre fichier de sauvegarde |
+| Points d’intérêt | Fondus dans le terrain généré | Aucune couture visible entre contenu créé et contenu généré |
+
+Le monde ouvert lui-même tourne en temps réel et ne se met pas en pause, sauf si vous le mettez en pause. Les ennemis peuvent vous traquer à travers la carte, et vous devrez peut-être courir et vous cacher. Chaque pas correspond à un lieu dans lequel vous pouvez zoomer pour récolter, chasser ou combattre — mais vous pouvez aussi simplement marcher entre les lieux, ce qui est une affirmation technique importante sur la façon dont le streaming et l’échelle du monde sont gérés.
+
+## Le moteur de dialogue : conversations nodulaires et réserves de connaissances partagées
+
+Le dialogue est l’endroit où le **moteur de jeu de World of Anterra** cesse d’être invisible. Le studio décrit un système de dialogue nodulaire dans lequel les PNJ puisent à la fois dans un dialogue personnel unique et dans des réserves partagées de connaissances locales, régionales et mondiales. En clair : un villageois peut connaître une rumeur venue d’une ville voisine sans qu’un scénariste ait écrit à la main cette réplique exacte pour ce personnage exact.
+
+Le côté joueur est un système fondé sur l’enquête. Vous posez toujours des questions au lieu de choisir parmi des réponses préécrites, vous pouvez les poser dans n’importe quel ordre et vous pouvez taper vos propres mots. Cette saisie ouvre la porte aux énigmes, mystères, secrets et easter eggs — des mécaniques qui seraient impossibles sans le graphe de nœuds sous-jacent.
+
+| Dialogue RPG traditionnel | Dialogue de World of Anterra |
+|---|---|
+| Arbres de dialogue fixes avec options prédéfinies | Fondé sur l’enquête : le joueur pose toujours les questions |
+| Longs pavés de texte et murs d’exposition | Répliques concises avec le lore intact |
+| L’ordre des branches est généralement contraint | Questions dans n’importe quel ordre, plus saisie au clavier |
+| La lecture est la seule interaction | La saisie résout des énigmes et révèle des secrets |
+| Chaque PNJ a besoin de répliques entièrement écrites | Répliques uniques plus réserves partagées locales/régionales/globales |
+
+Les comptes rendus communautaires des sessions régulières Discord Developer Firesides du studio sont le meilleur endroit pour entendre l’équipe parler de ces systèmes, et les sessions enregistrées sont archivées dans un canal dédié pour les contributeurs qui les ont manquées.
+
+## IA des PNJ, superposition d’assets et personnalisation des personnages
+
+Deux autres systèmes complètent la liste technologique confirmée : les routines et l’IA des PNJ, et la superposition d’assets. Le premier est ce qui fait qu’une ville semble vivante — les PNJ suivent des emplois du temps quotidiens tout en réagissant dynamiquement aux événements du monde et au joueur. Le second est ce qui donne à l’équipement une réalité physique plutôt que statistique.
+
+| Système de superposition | Ce qu’il contrôle |
+|---|---|
+| Personnage de base | Teint, carrure, morphologie |
+| Cheveux et barbe | Styles animés dynamiquement |
+| Équipement | Superposé dans presque toutes les combinaisons, sans objets réservés à un genre |
+| État de l’arme | Rengainée ou dégainée, avec des sous-types visuellement distincts |
+| État de mouvement | Courir ou marcher change l’animation de l’équipement porté |
+
+Cette dernière ligne est le détail qui révèle la profondeur de la superposition : une épée en fer et une épée de flamme sont visuellement différentes, et la même cape s’anime différemment à la marche et à la course. L’exemple préféré de l’équipe est la potion d’invisibilité — vous pouvez disparaître, mais vous devrez enlever vos vêtements pour vraiment disparaître, car les objets équipés forment leur propre couche de rendu.
+
+## Cibles de performance, plateformes et architecture coopérative
+
+81monkeys a déclaré que World of Anterra est développé depuis le début pour console et ordinateur. Cette seule décision se répercute sur toute la conception du **moteur de jeu de World of Anterra** : l’interface s’appuie sur des objets intégrés au monde et des icônes intuitives plutôt que sur des menus et des listes de texte, afin que la gestion des objets — déplacer, équiper, échanger, jeter — se fasse sans ouvrir un seul écran. Un HUD garde chaque action accessible tout en laissant le monde visuellement épuré.
+
+Le multijoueur est conçu pour se superposer à la simulation solo plutôt que pour la remplacer. Les joueurs entrent et sortent des mondes les uns des autres, partent à l’aventure ensemble ou séparément et échangent des marchandises, avec des événements narratifs mondiaux spéciaux déclenchés lorsque quelqu’un ouvre une faille vers un autre monde.
+
+- **Plateformes :** PC, Mac et consoles, les contributeurs choisissant leur version préférée au lancement.
+- **Localisation :** traduction professionnelle avant le lancement, plus des outils de traduction communautaire — le jeu précédent du studio est sorti en 10 langues.
+- **Coopération :** intégration transparente, avec sa propre progression et des récompenses déblocables liées aux événements de faille.
+- **Combat :** combat d’équipe simplifié sur grille, qui prend en charge des combats à faible risque à un seul bouton et des affrontements de boss plus tactiques.
+
+## FAQ
+
+**Quel moteur de jeu utilise World of Anterra ?**
+81monkeys n’a pas nommé publiquement de moteur commercial. La liste technologique confirmée — pipeline de rendu personnalisé, outils de création de monde, système de dialogue nodulaire, routines et IA des PNJ, et superposition d’assets — indique une chaîne d’outils interne fortement personnalisée pour le moteur de jeu de World of Anterra.
+
+**Le moteur de jeu de World of Anterra est-il développé en interne ou sous licence ?**
+Les fonctionnalités décrites sont propriétaires : un moteur de rendu personnalisé, des outils dédiés à la création de mondes et un graphe de dialogue avec des réserves de connaissances partagées. On ne sait pas s’il repose sur une base sous licence ou s’il est entièrement développé de zéro.
+
+**Comment le moteur gère-t-il la génération procédurale ?**
+Il mélange contenu fait main et contenu généré. Les lieux essentiels à la narration sont écrits, tandis que les rencontres plus petites sont placées dynamiquement et générées à partir de la graine de votre sauvegarde, si bien que deux joueurs ne voient jamais la même disposition de carte.
+
+**La technologie prend-elle en charge la coopération et les consoles ?**
+Oui sur les deux plans. Le jeu est développé depuis le début pour console et ordinateur, et la coopération est conçue pour permettre aux joueurs d’entrer et sortir des mondes les uns des autres pendant que la simulation solo continue de tourner.

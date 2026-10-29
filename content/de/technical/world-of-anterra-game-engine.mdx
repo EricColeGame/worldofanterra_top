@@ -1,0 +1,109 @@
+export const metadata = {
+  title: "World of Anterra Game Engine: Ein Blick in den Custom-Tech-Stack von 81monkeys",
+  description: "Was wir über die World of Anterra Game Engine wissen: Custom-Rendering, knotenbasiertes Dialogsystem, NPC-KI, prozedurale Welt-Tools und die Technik hinter dem RPG von 81monkeys.",
+  category: "technical",
+  date: "2026-10-27",
+}
+
+## Was 81monkeys tatsächlich über die World of Anterra Game Engine bestätigt hat
+
+Fragt man die meisten Indie-Studios, was ihr Open-World-RPG antreibt, bekommt man eine Ein-Wort-Antwort: Unity oder Unreal. Fragt man 81monkeys nach der **World of Anterra Game Engine**, ist die Antwort deutlich interessanter — ein Stack, der auf einer eigenen Rendering-Pipeline, hauseigenen Weltbau-Tools und einem von Grund auf selbst geschriebenen, knotenbasierten Dialogsystem basiert. Das ist wichtig, weil die Technik die Designversprechen erklärt: NPCs mit Tagesabläufen, Schatten, die die Uhrzeit verraten, und prozedurales Gelände, das mit handgefertigten Kulissen verschmilzt. Im Folgenden findet ihr alles, was öffentlich über die **World of Anterra Game Engine** bestätigt ist, was jeder Baustein ermöglicht und was das für Spieler bedeutet.
+
+Zuerst eine Klarstellung: 81monkeys hat seine Engine nicht öffentlich gebrandet, wie ein Studio „built in Unreal Engine 5" verkündet. Was das Team geteilt hat, ist eine Technik-Feature-Liste auf seiner [World of Anterra Kickstarter-Kampagnenseite](https://www.kickstarter.com/projects/81monkeys/world-of-anterra), und diese Liste liest sich wie eine maßgeschneiderte Toolchain statt wie eine Lizenz von der Stange.
+
+| Komponente | Von 81monkeys bestätigt | Was es nahelegt |
+|---|---|---|
+| Rendering | Eigene Rendering-Pipeline | Hauseigene Grafikarbeit statt Standard-Renderer |
+| Welterstellung | Weltbau-Tools | Proprietäre Gelände- und Level-Erstellung |
+| Dialog | Knotenbasiertes Dialogsystem mit gemeinsamen Wissenspools | Eigene narrative Tools, kein Plugin |
+| KI | NPC-Routinen und KI | Eine simulationsgetriebene Ebene mit Zeitplänen |
+| Charaktere und Gegenstände | Asset-Layering-Systeme | Modulare Ausrüstung im Paper-Doll-Stil |
+| Name und Version der Engine | Nicht bekannt gegeben | Öffentlich nicht bestätigbar |
+
+Diese Toolchain wird von einem Team gebaut, dessen Credits mehr als 25 Jahre und über 30 veröffentlichte Titel umfassen, darunter Arbeiten an Hearthstone, Outer Wilds, Bomberman Live und der Spyro the Dragon GBA-Trilogie. Eine Gruppe mit diesem Hintergrund, die sich entscheidet, Rendering und Welt-Tools selbst zu schreiben, sagt einiges darüber aus, wie eng die Systeme miteinander kommunizieren müssen.
+
+## Rendering: Wie die World of Anterra Game Engine mit Licht und Schatten umgeht
+
+Dynamische Beleuchtung ist der sichtbarste Beweis dafür, dass die **World of Anterra Game Engine** schwere Arbeit leistet. Das erklärte Ziel des Studios ist eine natürliche Verteilung und Verzerrung von Schatten, bei der sich Schatten wie 3D-Objekte verhalten, die mit 3D-Oberflächen interagieren. Mehrere Lichtquellen werfen gleichzeitig ihre eigenen Schatten — die Sonne, der Mond, flackernde Kerzen, die Fackel in eurer Hand, sogar ein flammender Pfeil, der nachts über den Bildschirm fliegt.
+
+Das Clevere daran ist, wie das ins Gameplay einfließt. Weil sich die Schattenwinkel mit eurem Standort in der Welt verschieben, könnt ihr die Tageszeit ablesen, indem ihr einfach auf den Boden um euch herum schaut. Das ist ein Rendering-Feature, das erzählerische Arbeit leistet: Es lässt eine Region geografisch real wirken, ohne eine einzige UI-Uhr.
+
+| Rendering-Feature | Was Spieler tatsächlich sehen |
+|---|---|
+| Tag-/Nacht-Zyklus | Schatten werden länger und drehen sich; die Zeit ist am Schattenwinkel ablesbar |
+| Mehrere gleichzeitige Schattenwerfer | Sonne, Mond, Kerzen, gehaltene Fackel und Projektile werfen jeweils Schatten |
+| Standortabhängige Schattenwinkel | Dieselbe Stunde sieht anders aus, je nachdem, wo man steht |
+| Wetter- und Umgebungseffekte | Stürme, Wellen, Wasserbewegung, reflektierende Oberflächen |
+| Umgebungsleben und Partikel | Insekten, kleine Tiere, Zaubereffekte und magische Kräfte |
+
+Das Team hat außerdem erklärt, die Effektarbeit stark vorantreiben zu wollen — dramatisches Wetter, magische Kräfte, Wasser und Reflexionen alles im selben Frame. Technisch ist das das klassische Argument dafür, den eigenen Renderer zu besitzen: Man kann Dutzende schattenwerfende Lichter in einer Szene einplanen, statt gegen eine Allzweck-Pipeline anzukämpfen.
+
+## Weltbau-Tools und prozedurale Generierung
+
+Anterras Karte ist geseedet, und die **World of Anterra Game Engine** ist es, die generierte und handgefertigte Inhalte denselben Raum teilen lässt, ohne eine sichtbare Naht. Das erklärte Designziel ist, dass Spieler nicht erkennen können, welche Orte von einem Menschen erschaffen und welche von den Tools zusammengesetzt wurden.
+
+Praktisch bedeutet das: Große narrative Anker — Städte, Burgen, zentrale Story-Momente — sind handgefertigt, während kleinere Begegnungen wie die Höhle eines Eremiten oder ein Banditenlager dynamisch platziert werden können, passend zu eurem jeweiligen Durchlauf. Alles ist auf euren Spielstand geseedet, sodass eure Reise durch Anterra einzigartig für euer Spiel ist.
+
+| Inhaltstyp | Wie er entsteht | Wirkung auf Spieler |
+|---|---|---|
+| Städte, Burgen, Quest-Hubs | Handgefertigt | Autoriertes Pacing und Lore-Genauigkeit |
+| Eremitenhöhlen, Banditenlager | Dynamisch platziert | Andere Begegnungen in jedem Durchlauf |
+| Gelände und Regionen | Prozedural, auf eure Karte geseedet | Eine Reise, einzigartig für euren Spielstand |
+| Orte von Interesse | In generiertes Gelände eingebettet | Keine sichtbare Naht zwischen autoriert und generiert |
+
+Die Oberwelt selbst läuft in Echtzeit und pausiert nicht, es sei denn, ihr pausiert sie. Gegner können euch über die Karte hinweg jagen, und ihr müsst möglicherweise rennen und euch verstecken. Jeder Schritt ist ein Ort, in den ihr hineinzoomen könnt, um zu sammeln, zu jagen oder zu kämpfen — ihr könnt aber auch einfach zwischen den Orten laufen, was eine bedeutende technische Aussage darüber ist, wie Streaming und Weltmaßstab gehandhabt werden.
+
+## Die Dialog-Engine: Knotenbasierte Gespräche und gemeinsame Wissenspools
+
+Beim Dialog hört die **World of Anterra Game Engine** auf, unsichtbar zu sein. Das Studio beschreibt ein knotenbasiertes Dialogsystem, bei dem NPCs sowohl auf einzigartige persönliche Dialoge als auch auf gemeinsame Pools lokalen, regionalen und weltweiten Wissens zurückgreifen. Einfach gesagt: Ein Dorfbewohner kann ein Gerücht aus einer Nachbarstadt kennen, ohne dass ein Autor genau diese Zeile für genau diese Figur von Hand geschrieben hat.
+
+Die spielerseitige Seite ist ein auf Nachfragen basierendes System. Ihr stellt immer Fragen, statt aus vorgefertigten Antworten zu wählen, ihr könnt in beliebiger Reihenfolge fragen und eure eigenen Worte eintippen. Dieses Tippen öffnet die Tür zu Rätseln, Geheimnissen, Mysterien und Easter Eggs — Mechaniken, die ohne den zugrunde liegenden Knotengraphen unmöglich wären.
+
+| Traditioneller RPG-Dialog | World of Anterra-Dialog |
+|---|---|
+| Feste Dialogbäume mit vorgegebenen Optionen | Auf Nachfragen basierend: Der Spieler fragt immer |
+| Lange Textwüsten und Exposition | Prägnante Zeilen mit intakter Lore |
+| Reihenfolge der Zweige meist eingeschränkt | Fragen in beliebiger Reihenfolge, plus getippte Eingabe |
+| Lesen ist die einzige Interaktion | Tippen löst Rätsel und deckt Geheimnisse auf |
+| Jeder NPC braucht vollständig autorierte Zeilen | Einzigartige Zeilen plus gemeinsame lokale/regionale/globale Pools |
+
+Community-Berichte von den regelmäßigen Discord Developer Firesides des Studios sind der beste Ort, um das Team über diese Systeme sprechen zu hören, und aufgezeichnete Sessions werden in einem eigenen Channel für Backer archiviert, die sie verpassen.
+
+## NPC-KI, Asset-Layering und Charakteranpassung
+
+Zwei weitere Systeme vervollständigen die bestätigte Tech-Liste: NPC-Routinen und KI sowie Asset-Layering. Das erste ist es, was Städte lebendig wirken lässt — NPCs folgen Tagesplänen und reagieren dennoch dynamisch auf Weltgeschehen und auf den Spieler. Das zweite ist es, was Ausrüstung physisch statt statistisch wirken lässt.
+
+| Layering-System | Was es steuert |
+|---|---|
+| Basischarakter | Hautfarbe, Statur, Körperbau |
+| Haare und Gesichtsbehaarung | Dynamisch animierte Stile |
+| Ausrüstung | In nahezu jeder Kombination geschichtet, ohne geschlechtsgebundene Gegenstände |
+| Waffenzustand | Verstaut versus gezogen, mit visuell unterscheidbaren Untertypen |
+| Bewegungszustand | Laufen versus Gehen verändert, wie ausgerüstete Ausrüstung animiert wird |
+
+Die letzte Zeile ist das Detail, das zeigt, wie tief das Layering geht: Ein Eisenschwert und ein Flammenschwert sehen visuell unterschiedlich aus, und derselbe Umhang animiert beim Gehen und beim Laufen anders. Das Lieblingsbeispiel des Teams ist der Unsichtbarkeitstrank — ihr könntet verschwinden, aber ihr müsst eure Kleidung ausziehen, um wirklich zu verschwinden, weil ausgerüstete Gegenstände ihre eigene gerenderte Ebene sind.
+
+## Performance-Ziele, Plattformen und Co-op-Architektur
+
+81monkeys hat erklärt, dass World of Anterra von Grund auf für Konsole und Desktop entwickelt wird. Diese eine Entscheidung wirkt sich auf das gesamte Design der **World of Anterra Game Engine** aus: Die Benutzeroberfläche setzt auf weltgetreue Gegenstände und intuitive Icons statt auf Menüs und Textlisten, sodass Gegenstandsverwaltung — Bewegen, Ausrüsten, Handeln, Fallenlassen — ohne das Öffnen eines einzigen Bildschirms geschieht. Ein HUD hält jede Aktion erreichbar und lässt die Welt dennoch optisch sauber.
+
+Der Multiplayer wird so gebaut, dass er auf der Singleplayer-Simulation aufsitzt, statt sie zu ersetzen. Spieler springen in die Welten der anderen hinein und wieder hinaus, erleben Abenteuer gemeinsam oder getrennt und handeln mit Waren, wobei spezielle narrative Weltereignisse ausgelöst werden, wenn jemand einen Riss in eine andere Welt öffnet.
+
+- **Plattformen:** PC, Mac und Konsolen, wobei Backer zum Launch ihre bevorzugte Version wählen.
+- **Lokalisierung:** professionelle Übersetzung vor dem Launch plus Community-Übersetzungstools — das vorherige Spiel des Studios erschien in 10 Sprachen.
+- **Co-op:** nahtloses Drop-in mit eigener Progression und freischaltbaren Belohnungen, die an Riss-Ereignisse geknüpft sind.
+- **Kampf:** gestraffter rundenbasierter Gruppenkampf, der Ein-Knopf-Kämpfe mit geringem Risiko und tiefergehende taktische Boss-Begegnungen unterstützt.
+
+## FAQ
+
+**Welche Game Engine verwendet World of Anterra?**
+81monkeys hat keine kommerzielle Engine öffentlich benannt. Die bestätigte Tech-Liste — eine eigene Rendering-Pipeline, Weltbau-Tools, ein knotenbasiertes Dialogsystem, NPC-Routinen und KI sowie Asset-Layering — deutet auf eine stark angepasste, hauseigene Toolchain für die World of Anterra Game Engine hin.
+
+**Ist die World of Anterra Game Engine selbst gebaut oder lizenziert?**
+Die beschriebenen Features sind proprietär: ein eigener Renderer, dedizierte Welt-Authoring-Tools und ein Dialoggraph mit gemeinsamen Wissenspools. Ob sie auf einer lizenzierten Basis aufsitzt oder vollständig von Grund auf neu ist, wurde nicht bekannt gegeben.
+
+**Wie geht die Engine mit prozeduraler Generierung um?**
+Sie mischt handgefertigte und generierte Inhalte. Narrativ kritische Orte sind autoriert, während kleinere Begegnungen dynamisch platziert und auf euren Spielstand geseedet werden, sodass keine zwei Spieler dasselbe Kartenlayout sehen.
+
+**Unterstützt die Technik Co-op und Konsolen?**
+Ja, in beiderlei Hinsicht. Das Spiel wird von Grund auf für Konsole und Desktop entwickelt, und der Co-op ist so gestaltet, dass Spieler in die Welten der anderen hinein- und hinausspringen können, während die Singleplayer-Simulation weiterläuft.

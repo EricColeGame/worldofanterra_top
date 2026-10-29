@@ -1,0 +1,109 @@
+export const metadata = {
+  title: "World of Anterra Game Engine: Inside 81monkeys' Custom Tech Stack",
+  description: "What we know about the World of Anterra game engine: custom rendering, node-based dialogue, NPC AI, procedural world tools, and the tech behind 81monkeys' RPG.",
+  category: "technical",
+  date: "2026-10-27",
+}
+
+## What 81monkeys Has Actually Confirmed About the World of Anterra Game Engine
+
+Ask most indie studios what powers their open-world RPG and you get a one-word answer: Unity or Unreal. Ask 81monkeys about the **World of Anterra game engine** and the answer is far more interesting — a stack built around a custom rendering pipeline, in-house world-building tools, and a node-based dialogue system written from scratch. That matters because the technology explains the design promises: NPCs with daily routines, shadows that tell the time, and procedural terrain that blends with handcrafted set pieces. Below is everything publicly confirmed about the **World of Anterra game engine**, what each piece enables, and what it means for players.
+
+The first thing to clear up: 81monkeys has not publicly branded its engine the way a studio announces "built in Unreal Engine 5." What the team has shared is a technology feature list on its [World of Anterra Kickstarter campaign page](https://www.kickstarter.com/projects/81monkeys/world-of-anterra), and that list reads like a bespoke toolchain rather than an off-the-shelf license.
+
+| Component | Confirmed by 81monkeys | What it suggests |
+|---|---|---|
+| Rendering | Custom rendering pipeline | In-house graphics work rather than a stock renderer |
+| World creation | World building tools | Proprietary terrain and level authoring |
+| Dialogue | Node-based dialogue system with shared knowledge pools | Custom narrative tooling, not a plugin |
+| AI | NPC routines and AI | A schedule-driven simulation layer |
+| Characters and items | Asset layering systems | Modular, paper-doll style equipment |
+| Engine name and version | Not disclosed | Cannot be confirmed publicly |
+
+That toolchain is being built by a team whose credits span more than 25 years and 30+ shipped titles, including work on Hearthstone, Outer Wilds, Bomberman Live, and the Spyro the Dragon GBA trilogy. A group with that background choosing to hand-roll rendering and world tools tells you something about how tightly the systems need to talk to each other.
+
+## Rendering: How the World of Anterra Game Engine Handles Light and Shadow
+
+Dynamic lighting is the most visible proof that the **World of Anterra game engine** is doing heavy lifting. The studio's stated goal is natural shadow distribution and distortion, where shadows behave like 3D objects interacting with 3D surfaces. Multiple light sources cast their own shadows simultaneously — the sun, the moon, flickering candles, the torch in your hand, even a flaming arrow streaking across the screen at night.
+
+The clever part is how that feeds gameplay. Because shadow angles shift with your location in the world, you can read the time of day just by looking at the ground around you. That is a rendering feature doing narrative work: it makes a region feel geographically real without a single UI clock.
+
+| Rendering feature | What players actually see |
+|---|---|
+| Day/night cycle | Shadows lengthen and rotate; time is readable from shadow angle |
+| Multiple simultaneous shadow casters | Sun, moon, candles, held torch, and projectiles each cast shadows |
+| Location-aware shadow angles | The same hour looks different depending on where you stand |
+| Weather and environmental effects | Storms, waves, water movement, reflective surfaces |
+| Ambient life and particles | Insects, small animals, spell effects and magical forces |
+
+The team has also said it intends to push effects work hard — dramatic weather, magical forces, water, and reflections all in the same frame. On a technical level, that is the classic argument for owning your renderer: you can budget for dozens of shadow-casting lights in a scene instead of fighting a general-purpose pipeline.
+
+## World-Building Tools and Procedural Generation
+
+Anterra's map is seeded, and the **World of Anterra game engine** is what lets generated and handcrafted content occupy the same space without a visible seam. The stated design goal is that players cannot tell which locations were authored by a human and which were assembled by the tools.
+
+Practically, that means big narrative anchors — towns, castles, main story beats — are handcrafted, while smaller encounters such as a hermit's cave or a bandit camp can be dynamically placed to fit your particular run. Everything is seeded to your save, so your journey through Anterra is unique to your game.
+
+| Content type | How it is produced | Player-facing impact |
+|---|---|---|
+| Towns, castles, quest hubs | Handcrafted | Authored pacing and lore accuracy |
+| Hermit caves, bandit camps | Dynamically placed | Different encounters each playthrough |
+| Terrain and regions | Procedural, seeded to your map | A journey unique to your save file |
+| Points of interest | Blended into generated terrain | No visible seam between authored and generated |
+
+The overworld itself runs in real time and does not pause unless you pause it. Enemies can hunt you across the map, and you may need to run and hide. Every step is a location you can zoom into for gathering, hunting, or fighting — but you can also simply walk between places, which is a meaningful technical claim about how streaming and world scale are handled.
+
+## The Dialogue Engine: Node-Based Conversations and Shared Knowledge Pools
+
+Dialogue is where the **World of Anterra game engine** stops being invisible. The studio describes a node-based dialogue system where NPCs draw on both unique personal dialogue and shared pools of local, regional, and worldwide knowledge. In plain terms: a villager can know a rumor from a neighboring town without a writer hand-authoring that exact line for that exact character.
+
+The player-facing side is an inquiry-based system. You always ask questions rather than picking from canned responses, you can ask in any order, and you can type your own words. That typing opens the door to riddles, mysteries, secrets, and easter eggs — mechanics that would be impossible without the underlying node graph.
+
+| Traditional RPG dialogue | World of Anterra dialogue |
+|---|---|
+| Fixed dialogue trees with preset options | Inquiry-based: the player always asks |
+| Long text dumps and exposition walls | Succinct lines with the lore intact |
+| Branch order is usually constrained | Questions in any order, plus typed input |
+| Reading is the only interaction | Typing solves riddles and uncovers secrets |
+| Each NPC needs fully authored lines | Unique lines plus shared local/regional/global pools |
+
+Community reports from the studio's regular Discord Developer Firesides are the best place to hear the team talk through these systems, and recorded sessions are archived in a dedicated channel for backers who miss them.
+
+## NPC AI, Asset Layering, and Character Customization
+
+Two more systems round out the confirmed tech list: NPC routines and AI, and asset layering. The first is what makes towns feel alive — NPCs follow daily schedules while still responding dynamically to world events and to the player. The second is what makes equipment feel physical rather than statistical.
+
+| Layering system | What it controls |
+|---|---|
+| Base character | Skin tone, build, body type |
+| Hair and facial hair | Dynamically animated styles |
+| Equipment | Layered in almost any combination, with no gender-locked items |
+| Weapon state | Sheathed versus wielded, with visually distinct sub-types |
+| Motion state | Running versus walking changes how equipped gear animates |
+
+That last row is the detail that reveals how deep the layering goes: an iron sword and a flame sword are visually different, and the same cloak animates differently at a walk and a run. The team's favorite example is the invisibility potion — you might vanish, but you will have to take your clothes off to truly disappear, because equipped items are their own rendered layer.
+
+## Performance Targets, Platforms, and Co-op Architecture
+
+81monkeys has stated that World of Anterra is being developed from the ground up for both console and desktop. That single decision ripples through the whole **World of Anterra game engine** design: the interface leans on true-to-world items and intuitive icons instead of menus and text lists, so item management — moving, equipping, trading, dropping — happens without opening a single screen. A HUD keeps every action reachable while leaving the world visually clean.
+
+Multiplayer is being built to sit on top of the single-player simulation rather than replace it. Players hop in and out of each other's worlds, adventure together or separately, and trade goods, with special narrative world events triggered when someone opens a rift into another world.
+
+- **Platforms:** PC, Mac, and consoles, with backers choosing their preferred version at launch.
+- **Localization:** professional translation before launch, plus community translation tools — the studio's previous game shipped in 10 languages.
+- **Co-op:** seamless drop-in with its own progression and unlockable rewards tied to rift events.
+- **Combat:** streamlined grid-based party combat that supports single-button low-risk fights and deeper tactical boss encounters.
+
+## FAQ
+
+**What game engine does World of Anterra use?**
+81monkeys has not publicly named a commercial engine. The confirmed technology list — a custom rendering pipeline, world building tools, a node-based dialogue system, NPC routines and AI, and asset layering — points to a heavily customized, in-house toolchain for the World of Anterra game engine.
+
+**Is the World of Anterra game engine custom-built or licensed?**
+The features described are proprietary: a custom renderer, dedicated world authoring tools, and a dialogue graph with shared knowledge pools. Whether it sits on top of a licensed base or is fully from scratch has not been disclosed.
+
+**How does the engine handle procedural generation?**
+It blends handcrafted and generated content. Narrative-critical locations are authored, while smaller encounters are dynamically placed and seeded to your save, so no two players see the same map layout.
+
+**Does the tech support co-op and consoles?**
+Yes on both counts. The game is built from the ground up for console and desktop, and co-op is designed to let players hop in and out of each other's worlds while the single-player simulation keeps running.

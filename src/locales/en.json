@@ -9,7 +9,14 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "platforms": "Platforms",
+    "mechanics": "Mechanics",
+    "media": "Media",
+    "community": "Community",
+    "multiplayer": "Multiplayer",
+    "technical": "Technical"
   },
   "home": {
     "meta": {
@@ -394,12 +401,37 @@
       "secondary": "Wishlist on Steam"
     }
   },
-  "bosses": {},
+  "guide": {
+    "overviewTitle": "World of Anterra Guides and Beginner Tips",
+    "overviewDescription": "Start your journey with World of Anterra beginner tips, gameplay explainers, release updates, developer coverage, previews, and reviews."
+  },
+  "platforms": {
+    "overviewTitle": "World of Anterra Platforms and Release Dates",
+    "overviewDescription": "Track World of Anterra release timing across PC, Steam, Nintendo Switch, PS5, and Xbox, including Steam Deck details."
+  },
+  "mechanics": {
+    "overviewTitle": "World of Anterra Game Mechanics",
+    "overviewDescription": "Learn how World of Anterra combat, classes, magic, character creation, romance, and open-world exploration work."
+  },
+  "media": {
+    "overviewTitle": "World of Anterra Trailers, Pixel Art, and Developer Media",
+    "overviewDescription": "Watch World of Anterra trailers, developer Q&A coverage, pixel-art showcases, and environment generation features."
+  },
+  "community": {
+    "overviewTitle": "World of Anterra Community and Kickstarter",
+    "overviewDescription": "Find World of Anterra community links, Reddit discussions, Discord updates, and Kickstarter information."
+  },
+  "multiplayer": {
+    "overviewTitle": "World of Anterra Multiplayer and Co-op",
+    "overviewDescription": "Read what is known about World of Anterra multiplayer, online co-op, and player-count plans."
+  },
+  "technical": {
+    "overviewTitle": "World of Anterra System Requirements and Download",
+    "overviewDescription": "Check World of Anterra system requirements, game engine details, download information, and pricing."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
-    "activeCodes": "Active Codes",
     "updated": "Updated",
-    "viewAllCodes": "View all codes",
     "playOnRoblox": "Play on Roblox",
     "inThisSection": "In this section",
     "tableOfContents": "Table of Contents",
@@ -425,9 +457,9 @@
     "officialYoutube": "Official YouTube",
     "vvBuilder": "Official Steam Community",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Race Guides",
-    "bossGuides": "Boss Guides",
-    "buildGuide": "Skills & Builds",
+    "raceGuides": "Platforms & Release Dates",
+    "bossGuides": "Game Mechanics",
+    "buildGuide": "Community & Multiplayer",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   }

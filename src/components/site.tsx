@@ -81,20 +81,6 @@ export async function WikiSidebar({ locale, navGroups, currentPath }: { locale: 
           ))}
         </div>
       </section>
-      <section className="rounded-2xl border border-border bg-card/60 p-5">
-        <h3 className="mb-3 text-sm font-bold text-foreground">{t("activeCodes")}</h3>
-        <div className="space-y-3 text-sm">
-          <div className="rounded-xl bg-muted p-3">
-            <code className="font-bold text-foreground">COMING-SOON</code>
-            <p className="mt-1 text-muted-foreground">No active codes currently available</p>
-          </div>
-          <div className="rounded-xl bg-muted p-3">
-            <code className="font-bold text-foreground">STAY-TUNED</code>
-            <p className="mt-1 text-muted-foreground">Check back soon for new codes</p>
-          </div>
-          <Link href={localizeHref("/codes", locale)} className="inline-flex items-center gap-1 text-sm font-semibold text-[hsl(var(--nav-theme))]">{t("viewAllCodes")} <ChevronRight className="h-4 w-4" /></Link>
-        </div>
-      </section>
     </aside>
   );
 }
@@ -117,7 +103,7 @@ export async function SiteFooter({ locale }: { locale: string }) {
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">{t("about")}</p>
           </div>
           <FooterList locale={locale} title={t("quickLinks")} links={[[t("playGame"), siteConfig.gameUrl || "#"], [t("officialDiscord"), siteConfig.social?.discord || "#"], [t("officialYoutube"), siteConfig.social?.youtube || "#"], [t("vvBuilder"), siteConfig.social?.steamCommunity || "#"]]} />
-          <FooterList locale={locale} title={t("guides")} links={[[t("beginnerGuide"), "/guide"], [t("raceGuides"), "/races"], [t("bossGuides"), "/bosses"], [t("buildGuide"), "/skills"], [t("privacyPolicy"), "/privacy-policy"], [t("termsOfService"), "/terms-of-service"]]} />
+          <FooterList locale={locale} title={t("guides")} links={[[t("beginnerGuide"), "/guide"], [t("raceGuides"), "/platforms"], [t("bossGuides"), "/mechanics"], [t("buildGuide"), "/community"], [t("privacyPolicy"), "/privacy-policy"], [t("termsOfService"), "/terms-of-service"]]} />
         </div>
         <div className="mt-10 flex flex-col gap-4 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>{t("copyright")}</p>
