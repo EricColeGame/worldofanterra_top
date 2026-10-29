@@ -237,46 +237,30 @@ export interface NavGroup {
 
 // 分组标题映射：slug → 人类可读标题（默认英文）
 const GROUP_TITLES: Record<string, string> = {
-  guide: "Getting Started",
+  guide: "Guide",
   platforms: "Platforms",
-  mechanics: "Game Mechanics",
-  media: "Media",
-  community: "Community",
-  multiplayer: "Multiplayer",
-  technical: "Technical",
+  mechanics: "Mechanics",
 };
 
 // Spanish group titles
 const GROUP_TITLES_ES: Record<string, string> = {
-  guide: "Primeros pasos",
+  guide: "Guía",
   platforms: "Plataformas",
   mechanics: "Mecánicas",
-  media: "Multimedia",
-  community: "Comunidad",
-  multiplayer: "Multijugador",
-  technical: "Técnico",
 };
 
 // German group titles
 const GROUP_TITLES_DE: Record<string, string> = {
-  guide: "Erste Schritte",
+  guide: "Ratgeber",
   platforms: "Plattformen",
   mechanics: "Spielmechanik",
-  media: "Medien",
-  community: "Community",
-  multiplayer: "Mehrspieler",
-  technical: "Technik",
 };
 
 // French group titles
 const GROUP_TITLES_FR: Record<string, string> = {
-  guide: "Premiers pas",
+  guide: "Guide",
   platforms: "Plateformes",
   mechanics: "Mécanismes",
-  media: "Médias",
-  community: "Communauté",
-  multiplayer: "Multijoueur",
-  technical: "Technique",
 };
 
 // locale → 分组标题映射
@@ -296,7 +280,7 @@ const OVERVIEW_LABEL_BY_LOCALE: Record<string, string> = {
 
 // 分组排序顺序
 const GROUP_ORDER: string[] = [
-  "guide", "platforms", "mechanics", "media", "community", "multiplayer", "technical",
+  "guide", "platforms", "mechanics",
 ];
 
 /**

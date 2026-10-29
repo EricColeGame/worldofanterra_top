@@ -116,7 +116,7 @@ export async function SiteFooter({ locale }: { locale: string }) {
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">{t("about")}</p>
           </div>
           <FooterList locale={locale} title={t("quickLinks")} links={[[t("playGame"), siteConfig.gameUrl || "#"], [t("officialDiscord"), siteConfig.social?.discord || "#"], [t("officialYoutube"), siteConfig.social?.youtube || "#"], [t("vvBuilder"), siteConfig.social?.steamCommunity || "#"]]} />
-          <FooterList locale={locale} title={t("guides")} links={[[t("beginnerGuide"), "/guide"], [t("raceGuides"), "/platforms"], [t("bossGuides"), "/mechanics"], [t("buildGuide"), "/community"], [t("privacyPolicy"), "/privacy-policy"], [t("termsOfService"), "/terms-of-service"]]} />
+          <FooterList locale={locale} title={t("guides")} links={[[t("beginnerGuide"), "/guide"], [t("raceGuides"), "/platforms"], [t("bossGuides"), "/mechanics"], [t("buildGuide"), "/guide/world-of-anterra-gameplay"], [t("privacyPolicy"), "/privacy-policy"], [t("termsOfService"), "/terms-of-service"]]} />
         </div>
         <div className="mt-10 flex flex-col gap-4 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>{t("copyright")}</p>

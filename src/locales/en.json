@@ -9,7 +9,10 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "platforms": "Platforms",
+    "mechanics": "Mechanics"
   },
   "home": {
     "meta": {
@@ -370,17 +373,22 @@
     "finalCta": {
       "title": "Ready to Explore World of Anterra?",
       "description": "From your first quest to tactical party battles and hidden corners of the world, our community wiki has practical guides for every stage of your adventure.",
-      "primary": "Read the Beginner Guide",
+      "primary": "Read the Gameplay Guide",
       "secondary": "Wishlist on Steam"
     }
   },
-  "guide": {},
-  "platforms": {},
-  "mechanics": {},
-  "media": {},
-  "community": {},
-  "multiplayer": {},
-  "technical": {},
+  "guide": {
+    "overviewTitle": "World of Anterra Guide",
+    "overviewDescription": "Explore World of Anterra gameplay and release information."
+  },
+  "platforms": {
+    "overviewTitle": "World of Anterra Platforms",
+    "overviewDescription": "Check the announced World of Anterra platforms and availability."
+  },
+  "mechanics": {
+    "overviewTitle": "World of Anterra Mechanics",
+    "overviewDescription": "Learn about World of Anterra combat and its announced gameplay systems."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "updated": "Updated",
@@ -408,10 +416,10 @@
     "officialDiscord": "Official Discord",
     "officialYoutube": "Official YouTube",
     "vvBuilder": "Official Steam Community",
-    "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Platforms & Release Dates",
-    "bossGuides": "Game Mechanics",
-    "buildGuide": "Community & Multiplayer",
+    "beginnerGuide": "Guide",
+    "raceGuides": "Platforms",
+    "bossGuides": "Mechanics",
+    "buildGuide": "Gameplay Guide",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   }
