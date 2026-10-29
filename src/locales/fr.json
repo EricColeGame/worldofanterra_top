@@ -1,1 +1,466 @@
-{}
+{
+  "site": {
+    "name": "Wiki de World of Anterra",
+    "shortName": "World of Anterra",
+    "tagline": "Guides, quêtes et combats de RPG fantastiques en monde ouvert",
+    "description": "Explorez World of Anterra avec des guides sur les quêtes, les combats, la construction de personnages, l'artisanat, l'exploration, les secrets et la progression dans son RPG fantastique en monde ouvert.",
+    "legalNotice": "Wiki non officiel des fans de World of Anterra. Non affilié à 81monkeys."
+  },
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "toggleTheme": "Changer de thème",
+    "guide": "Guide",
+    "platforms": "Plateformes",
+    "mechanics": "Mécanique",
+    "media": "Médias",
+    "community": "Communauté",
+    "multiplayer": "Multijoueur",
+    "technical": "Technique"
+  },
+  "home": {
+    "meta": {
+      "title": "World of Anterra Wiki — Guides pour débutants, combat et exploration",
+      "description": "Explorez World of Anterra avec des conseils pour débutants, des guides de combat en grille, la planification des personnages, la fabrication, l'exploration du monde, les détails de la version et les actualités coopératives."
+    },
+    "hero": {
+      "eyebrow": "RPG fantastique en monde ouvert Pixel Art",
+      "title": "Wiki de World of Anterra",
+      "description": "Explorez un monde fantastique créé à la main, découvrez des secrets cachés, suivez des quêtes à embranchements, personnalisez vos aventuriers et maîtrisez des combats de groupe rapides dans World of Anterra.",
+      "stats": [
+        "Prévu pour 2026",
+        "PC via Steam",
+        "Plus de 150 000 listes de souhaits",
+        "RPG en monde ouvert"
+      ],
+      "primaryCta": "Liste de souhaits sur Steam",
+      "secondaryCta": "Regardez la bande-annonce officielle",
+      "tertiaryCta": "Explorer les guides",
+      "videoLabel": "Médias officiels"
+    },
+    "updates": {
+      "title": "Dernières mises à jour",
+      "browse": "Parcourir tous les guides",
+      "viewAll": "Afficher tout"
+    },
+    "start": {
+      "eyebrow": "Commencez ici",
+      "title": "Votre voyage dans World of Anterra",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guide du débutant",
+          "description": "Apprenez des didacticiels facultatifs, le rassemblement précoce, les attaques sournoises, les règles de retraite et la liste de contrôle de la première session qui rend l'exploration plus sûre."
+        },
+        {
+          "number": "2",
+          "title": "Rôles du groupe",
+          "description": "Construisez un groupe World of Anterra équilibré autour de la pression de première ligne, de la couverture des faiblesses, du soutien et de l'utilité au lieu d'accumuler des dégâts bruts."
+        },
+        {
+          "number": "3",
+          "title": "Bases du combat",
+          "description": "Positionnement de la grille de maîtrise, attaques et défense rapides, dangers environnementaux et consommables rares avant le premier donjon."
+        },
+        {
+          "number": "4",
+          "title": "Guide de fabrication",
+          "description": "Transformez les baies, les matériaux récoltés et les créatures en objets de guérison, en améliorations d'équipement, en fournitures de camp et en consommables prêts pour les donjons."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Pages populaires",
+      "title": "Tendance actuelle",
+      "quickLinks": [
+        "Guide du débutant",
+        "Bases du combat",
+        "Création de personnage",
+        "Statut coopératif"
+      ],
+      "cards": []
+    },
+    "aboutGame": {
+      "title": "Qu'est-ce que World of Anterra ?",
+      "paragraphs": [
+        "World of Anterra est un RPG en monde ouvert pixel-art fabriqué à la main par 81monkeys, prévu pour PC via Steam en 2026. Son monde s'étend sur des continents, des océans, des montagnes, des grottes et des donjons, avec des NPC qui travaillent, socialisent, mangent et poursuivent leurs propres routines.",
+        "L'aventure combine une histoire non linéaire et des quêtes ramifiées avec des combats de groupe basés sur une grille, des attaques et une défense rapides, des questions de dialogue dactylographiées et des activités telles que le camping, l'artisanat, la construction, la collecte et la pêche. La progression passe par la composition du groupe, l'équipement visible, les sorts, les objets fabriqués et l'exploration plutôt que par un seul chemin linéaire."
+      ],
+      "stats": [
+        {
+          "label": "Développeur",
+          "value": "81monkeys"
+        },
+        {
+          "label": "Plateforme",
+          "value": "PC via Steam"
+        },
+        {
+          "label": "Genre",
+          "value": "RPG en monde ouvert"
+        },
+        {
+          "label": "Sortie",
+          "value": "Fenêtre 2026"
+        },
+        {
+          "label": "Combattre",
+          "value": "Fête basée sur une grille"
+        },
+        {
+          "label": "Monde",
+          "value": "Fabriqué à la main"
+        },
+        {
+          "label": "Coopérative",
+          "value": "En ligne prévu"
+        }
+      ],
+      "cta": "Explorer tous les guides"
+    },
+    "explore": {
+      "title": "Explorez le wiki de World of Anterra",
+      "description": "Huit guides ciblés couvrent les systèmes les plus importants : le démarrage, les détails de la version, le combat, la construction du personnage, les quêtes, l'exploration, l'artisanat et la coopération.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "World of Anterra Guide du débutant",
+          "description": "Commencez par des didacticiels facultatifs, rassemblez de la nourriture et du matériel, testez le combat en toute sécurité et développez des habitudes qui vous seront utiles tout au long du premier donjon.",
+          "href": "/guide/world-of-anterra-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Suivez la première invite du didacticiel, puis essayez de sauter la suivante pour découvrir le fonctionnement du guidage facultatif."
+            },
+            {
+              "label": "2",
+              "detail": "Ramassez les baies, taillez les buissons et vérifiez les conteneurs autour de la zone de départ avant de vous déplacer vers l'intérieur."
+            },
+            {
+              "label": "3",
+              "detail": "Parcourez le bord extérieur de la zone de départ pour savoir où se termine le terrain sûr."
+            },
+            {
+              "label": "4",
+              "detail": "Entraînez-vous au mouvement, à l'esquive et à l'endurance loin des ennemis pour que les commandes semblent naturelles."
+            },
+            {
+              "label": "5",
+              "detail": "Menez un combat facile et un combat risqué pour calibrer les dégâts, le moment de la retraite et la valeur des consommables."
+            },
+            {
+              "label": "6",
+              "detail": "Ouvrez chaque menu, mémorisez trois points de repère et reposez-vous avant d'entrer dans des grottes ou des cryptes."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "World of Anterra Date de sortie et démo",
+          "description": "Suivez la fenêtre de sortie de Steam, les plans de démonstration, les plates-formes prises en charge et les annonces officielles de World of Anterra en un seul endroit.",
+          "href": "/guide/world-of-anterra-release-date",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Steam",
+              "detail": "Liste de souhaits et suivez la page de la boutique officielle pour les notifications de lancement."
+            },
+            {
+              "label": "2026",
+              "detail": "La liste Steam affiche une fenêtre de sortie 2026 pour World of Anterra."
+            },
+            {
+              "label": "Démo",
+              "detail": "Une démo alpha est prévue pour certains contributeurs sur PC."
+            },
+            {
+              "label": "Plateformes",
+              "detail": "PC via Steam est confirmé, avec des versions de bureau et de console prévues."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "World of Anterra Mécanismes de jeu",
+          "description": "Comprenez comment l'exploration artisanale, les quêtes non linéaires, les combats en grille, les actions rapides, les dialogues et les activités s'articulent.",
+          "href": "/guide/world-of-anterra-gameplay",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Combattre",
+              "detail": "Le positionnement sur la grille définit la couche tactique ; les attaques chronométrées et la défense décident de l'exécution."
+            },
+            {
+              "label": "Quêtes",
+              "detail": "Des quêtes à embranchements et une histoire non linéaire vous permettent de suivre les pistes dans votre propre ordre."
+            },
+            {
+              "label": "Artisanat",
+              "detail": "Équipements et consommables pour la collecte, le camping, la construction, la cuisine et la pêche."
+            },
+            {
+              "label": "Dialogues",
+              "detail": "Posez des questions à NPC, y compris des requêtes saisies, pour découvrir les connaissances et les accroches des quêtes."
+            },
+            {
+              "label": "Monde",
+              "detail": "Un monde vivant fonctionne selon les routines NPC, la météo, l'éclairage et les cycles jour-nuit."
+            },
+            {
+              "label": "Butin",
+              "detail": "Recherchez des conteneurs et des objets cassables à la recherche de fournitures et de passages cachés."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Personnalisation des personnages World of Anterra",
+          "description": "Planifiez un héros flexible autour des rôles du groupe, des couches d'équipement visibles, des options de dialogue et des activités qui soutiennent les longues expéditions.",
+          "href": "/mechanics/world-of-anterra-character-creation",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Rôle de combat : choisissez une spécialité qui crée des ouvertures pour le reste du groupe."
+            },
+            {
+              "label": "A",
+              "detail": "Compétence non liée au combat : couvre les lacunes en matière de dialogue, de collecte, d'artisanat ou d'exploration."
+            },
+            {
+              "label": "B",
+              "detail": "Plan d'équipement : utilisez des équipements superposés pour renforcer le rôle et rester flexible."
+            },
+            {
+              "label": "C",
+              "detail": "Apparence : personnalisez les sprites, les vêtements et les accessoires sans modifier le plan."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "World of Anterra Quêtes et histoire",
+          "description": "Suivez l'histoire non linéaire à travers des quêtes à embranchements, des conversations dactylographiées, l'histoire du monde, les races anciennes et le mystère de l'Œil.",
+          "href": "/mechanics/world-of-anterra-open-world-rpg-adventure",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Choix",
+              "detail": "Les chemins de quête divergent, donc les décisions sur où aller et à qui faire confiance façonnent le voyage."
+            },
+            {
+              "label": "Connaissance",
+              "detail": "Des livres, des rumeurs et des indices environnementaux révèlent les origines de la magie et l'Œil d'Anterra."
+            },
+            {
+              "label": "NPCs",
+              "detail": "Les NPC travaillent, socialisent, mangent et pratiquent des passe-temps selon leur propre routine quotidienne."
+            },
+            {
+              "label": "Secrets",
+              "detail": "Les cryptes, les grottes, les maisons et les objets cassables cachent du butin et des histoires secondaires."
+            },
+            {
+              "label": "Dialogues",
+              "detail": "Tapez vos propres questions pour obtenir des instructions, du contexte et des éléments de quête des conversations."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "World of Anterra Exploration du monde",
+          "description": "Explorez un monde artisanal composé de continents, d'océans, de montagnes, de grottes, de cryptes, de donjons, de villes et de secrets cachés.",
+          "href": "/media/world-of-anterra-environment-generation",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Villes",
+              "detail": "Les tavernes, les magasins et les routines NPC font des colonies des arrêts utiles entre les expéditions."
+            },
+            {
+              "label": "Grottes",
+              "detail": "Les espaces restreints récompensent un positionnement prudent, une conscience de l'éclairage et un itinéraire de retraite clair."
+            },
+            {
+              "label": "Côtes",
+              "detail": "Les océans, les rivières et les shaders d'eau créent des points de repère et des itinéraires sur la carte."
+            },
+            {
+              "label": "Météo",
+              "detail": "La météo dynamique et les cycles jour-nuit modifient la visibilité, l'humeur et la planification des voyages."
+            },
+            {
+              "label": "Secrets",
+              "detail": "Les objets cassables, les conteneurs et les zones magiques instables cachent des découvertes facultatives."
+            },
+            {
+              "label": "Voyage",
+              "detail": "Choisissez des points de repère, reposez-vous avant de longs voyages et explorez les limites extérieures de chaque nouvelle région."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "World of Anterra Fabrication et progression",
+          "description": "Transformez les ressources collectées en consommables, en équipement, en fournitures de camp et en projets de construction tout en renforçant l'ensemble du groupe.",
+          "href": "/guide/world-of-anterra-gameplay",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Rassembler",
+              "detail": "Collectez des baies, des matériaux et des créatures tout en explorant chaque région."
+            },
+            {
+              "label": "Artisanat",
+              "detail": "Produisez des objets de guérison, des outils et des équipements avant d'entrer dans un donjon."
+            },
+            {
+              "label": "Campement",
+              "detail": "Reposez-vous dans des camps ou des tavernes pour récupérer avant une longue expédition."
+            },
+            {
+              "label": "Construire",
+              "detail": "Investissez les ressources rassemblées dans des projets de construction et dans le soutien de la base à long terme."
+            },
+            {
+              "label": "Mise à niveau",
+              "detail": "Donnez la priorité à l'équipement de première ligne, puis couvrez les sorts, les consommables et les options utilitaires."
+            },
+            {
+              "label": "Explorer",
+              "detail": "Traitez la découverte comme une progression : les recettes, les raccourcis et l'histoire débloquent de nouveaux choix."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "World of Anterra Multijoueur et Coopération",
+          "description": "Découvrez l'aventure solo, les plans de coopération en ligne du studio et les chaînes officielles proposant des mises à jour multijoueurs.",
+          "href": "/guide/world-of-anterra-news",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Solo",
+              "detail": "La campagne est construite autour d'un joueur contrôlant un groupe artisanal."
+            },
+            {
+              "label": "Coopérative",
+              "detail": "Un jeu coopératif en ligne est prévu parallèlement à l'aventure solo."
+            },
+            {
+              "label": "Fête",
+              "detail": "Les membres du groupe sont des personnages que vous créez et contrôlez, et non des joueurs en ligne séparés."
+            },
+            {
+              "label": "Mises à jour",
+              "detail": "Suivez les actualités officielles de Steam et les discussions des développeurs pour plus de détails sur le mode et le nombre de joueurs."
+            },
+            {
+              "label": "Plateformes",
+              "detail": "Des versions de bureau et de console sont prévues ; PC via Steam est la vitrine confirmée."
+            },
+            {
+              "label": "Partager",
+              "detail": "Les sessions copilotes sur canapé et les parties parallèles permettent aux amis de comparer les choix et les versions."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ World of Anterra",
+      "description": "Réponses aux questions courantes sur World of Anterra, du calendrier de sortie et des plates-formes aux combats, classes et coopération.",
+      "items": [
+        {
+          "question": "Qu'est-ce que World of Anterra ?",
+          "answer": "World of Anterra est un RPG en monde ouvert pixel-art fabriqué à la main par 81monkeys. Il combine une histoire non linéaire, des quêtes à embranchements, des combats de groupe basés sur une grille avec des actions rapides, des questions de dialogue dactylographiées et des activités telles que le camping, l'artisanat, la construction, la collecte et la pêche."
+        },
+        {
+          "question": "Quelle est la date de sortie de World of Anterra ?",
+          "answer": "La page World of Anterra Steam répertorie une fenêtre de version 2026. Créez une liste de souhaits et suivez la page de la boutique officielle pour connaître la date de lancement de l'entreprise et les annonces de démonstration."
+        },
+        {
+          "question": "Quelles plates-formes World of Anterra prendra-t-il en charge ?",
+          "answer": "PC via Steam est la vitrine confirmée de World of Anterra. Le développeur cible également les versions de bureau et de console, les bailleurs de fonds choisissant leur plate-forme préférée."
+        },
+        {
+          "question": "Comment fonctionnent les combats dans World of Anterra ?",
+          "answer": "Le combat World of Anterra utilise une grille pour le positionnement et des entrées rapides pour les attaques et la défense. Les combats plus difficiles récompensent l'exploitation des faiblesses, les risques environnementaux, les consommables rares et un groupe construit autour de rôles clairs."
+        },
+        {
+          "question": "World of Anterra propose-t-il une coopération ?",
+          "answer": "Une coopération en ligne est prévue parallèlement à la campagne solo World of Anterra. Suivez les actualités officielles de Steam et les discussions des développeurs pour plus de détails sur le mode, le nombre de joueurs et le calendrier de lancement."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Prêt à explorer World of Anterra ?",
+      "description": "De votre première quête aux batailles tactiques en groupe et aux coins cachés du monde, notre wiki communautaire propose des guides pratiques pour chaque étape de votre aventure.",
+      "primary": "Lire le guide du débutant",
+      "secondary": "Liste de souhaits sur Steam"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Guides World of Anterra et conseils pour débutants",
+    "overviewDescription": "Commencez votre voyage avec les conseils pour débutants de World of Anterra, les explications de gameplay, les mises à jour de version, la couverture des développeurs, les aperçus et les critiques."
+  },
+  "platforms": {
+    "overviewTitle": "Plateformes World of Anterra et dates de sortie",
+    "overviewDescription": "Suivez le calendrier de sortie de World of Anterra sur PC, Steam, Nintendo Switch, PS5 et Xbox, y compris les détails de Steam Deck."
+  },
+  "mechanics": {
+    "overviewTitle": "Mécaniques de jeu World of Anterra",
+    "overviewDescription": "Découvrez comment fonctionnent les combats, les classes, la magie, la création de personnages, la romance et l'exploration du monde ouvert de World of Anterra."
+  },
+  "media": {
+    "overviewTitle": "Bandes-annonces World of Anterra, Pixel Art et médias de développement",
+    "overviewDescription": "Regardez les bandes-annonces de World of Anterra, la couverture des questions et réponses des développeurs, les vitrines de pixel art et les fonctionnalités de génération d'environnement."
+  },
+  "community": {
+    "overviewTitle": "Communauté World of Anterra et Kickstarter",
+    "overviewDescription": "Recherchez les liens de la communauté World of Anterra, les discussions Reddit, les mises à jour Discord et les informations Kickstarter."
+  },
+  "multiplayer": {
+    "overviewTitle": "World of Anterra Multijoueur et Coopération",
+    "overviewDescription": "Découvrez ce que l'on sait sur les plans multijoueur, coopératif en ligne et de nombre de joueurs de World of Anterra."
+  },
+  "technical": {
+    "overviewTitle": "World of Anterra Configuration système requise et téléchargement",
+    "overviewDescription": "Vérifiez la configuration système requise pour World of Anterra, les détails du moteur de jeu, les informations de téléchargement et les tarifs."
+  },
+  "shared": {
+    "wikiNavigation": "Navigation dans les wikis",
+    "updated": "Mis à jour",
+    "playOnRoblox": "Jouer sur Roblox",
+    "inThisSection": "Dans cette section",
+    "tableOfContents": "Table des matières",
+    "nextSteps": "Prochaines étapes",
+    "needHelp": "Besoin d'aide ?",
+    "relatedReading": "Lecture connexe",
+    "relatedGuides": "Guides connexes",
+    "readMore": "Lire la suite",
+    "officialMedia": "Médias officiels",
+    "home": "Accueil",
+    "noGuidesAvailable": "Aucun guide disponible pour l'instant. Revenez bientôt !"
+  },
+  "footer": {
+    "aboutTitle": "Wiki de World of Anterra",
+    "about": "World of Anterra Wiki est un guide indépendant créé par des fans couvrant les quêtes, les combats en groupe, la construction de personnages, la fabrication, l'exploration et la progression dans le RPG fantastique en monde ouvert.",
+    "quickLinks": "Liens rapides",
+    "guides": "Guides",
+    "legal": "Mentions légales",
+    "copyright": "2026 Wiki World of Anterra. Non affilié à 81monkeys.",
+    "description": "RPG en monde ouvert pixel-art fabriqué à la main par 81monkeys, prévu pour PC via Steam en 2026.",
+    "playGame": "Liste de souhaits sur Steam",
+    "officialDiscord": "Discord officiel",
+    "officialYoutube": "YouTube officiel",
+    "vvBuilder": "Steam Community officiel",
+    "beginnerGuide": "Guide du débutant",
+    "raceGuides": "Plateformes et dates de sortie",
+    "bossGuides": "Mécaniques de jeu",
+    "buildGuide": "Communauté et multijoueur",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation"
+  }
+}
