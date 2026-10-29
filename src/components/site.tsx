@@ -81,6 +81,19 @@ export async function WikiSidebar({ locale, navGroups, currentPath }: { locale: 
           ))}
         </div>
       </section>
+      <section className="rounded-2xl border border-border bg-card/60 p-5 shadow-sm">
+        <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-muted-foreground">Active Codes</h3>
+        <div className="space-y-3">
+          <div className="rounded-xl border border-border bg-background p-3">
+            <code className="font-mono text-sm font-bold text-foreground">COMING-SOON</code>
+            <p className="mt-1 text-xs text-muted-foreground">No active codes currently available</p>
+          </div>
+          <div className="rounded-xl border border-border bg-background p-3">
+            <code className="font-mono text-sm font-bold text-foreground">STAY-TUNED</code>
+            <p className="mt-1 text-xs text-muted-foreground">Check back soon for new codes</p>
+          </div>
+        </div>
+      </section>
     </aside>
   );
 }
