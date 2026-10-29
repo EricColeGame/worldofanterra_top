@@ -19,18 +19,18 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "My Seafood Stand Wiki",
-  shortName: "My Seafood Stand",
-  logoText: "SS",
-  tagline: "Complete Guides, Codes, Recipes & Tier Lists",
-  description: "Your ultimate guide to My Seafood Stand on Roblox! Explore active working codes, seafood recipes, best upgrades, profit strategies, and progression guides.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top").hostname.replace(/^www\./, "")}`,
-  gameUrl: "https://www.roblox.com/games/my-seafood-stand",
-  heroVideoId: "M8DvcwoFRrk", // Roblox My Seafood Stand codes & gameplay video
+  name: "World of Anterra Wiki",
+  shortName: "World of Anterra",
+  logoText: "W",
+  tagline: "Open-World Fantasy RPG Guides, Races & Bosses",
+  description: "Fan-made World of Anterra wiki covering races, bosses, builds, crafting, exploration, and progression guides.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://worldofanterra.top",
+  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://worldofanterra.top").hostname.replace(/^www\./, "")}`,
+  gameUrl: "https://store.steampowered.com/app/2402470/World_of_Anterra/",
+  heroVideoId: "gYCpgXP3XAs", // World of Anterra Trailer 2 — official 81monkeys video
   social: {
-    discord: "https://discord.gg/roblox",
-    youtube: "https://www.youtube.com/@roblox",
+    discord: "https://discord.com/servers/867775819967102986",
+    youtube: "https://www.youtube.com/@81monkeysStudio",
   },
   locales: ["en", "es", "pt", "de", "fr"],
   defaultLocale: "en",
