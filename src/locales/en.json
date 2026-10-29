@@ -38,27 +38,27 @@
     },
     "start": {
       "eyebrow": "Start Here",
-      "title": "Your World of Anterra Journey",
+      "title": "Start Your World of Anterra Journey",
       "cards": [
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Learn optional tutorials, early gathering, sneak attacks, retreat rules, and the first-session checklist that makes exploration safer."
+          "description": "Meet the Traveller, explore the open world, ask characters questions, and follow the story at your own pace."
         },
         {
           "number": "2",
-          "title": "Party Roles",
-          "description": "Build a balanced World of Anterra party around frontline pressure, weakness coverage, support, and utility instead of stacking raw damage."
+          "title": "Combat Basics",
+          "description": "Learn how grid movement, timed attacks and defense, magic spells, and crafted items fit together."
         },
         {
           "number": "3",
-          "title": "Combat Basics",
-          "description": "Master grid positioning, quick-time attacks and defense, environmental hazards, and rare consumables before the first dungeon."
+          "title": "Build Your Party",
+          "description": "Explore party customization, items, and visible gear before planning how your characters will fight."
         },
         {
           "number": "4",
-          "title": "Crafting Guide",
-          "description": "Turn berries, gathered materials, and creature drops into healing items, gear upgrades, camp supplies, and dungeon-ready consumables."
+          "title": "World Exploration",
+          "description": "Look for clues in books and conversations, then investigate caves, crypts, containers, and breakable objects."
         }
       ]
     },
@@ -74,10 +74,10 @@
       "cards": []
     },
     "aboutGame": {
-      "title": "What is World of Anterra?",
+      "title": "What Is World of Anterra?",
       "paragraphs": [
-        "World of Anterra is a handcrafted pixel-art open-world RPG from 81monkeys, planned for PC via Steam in 2026. Its world spans continents, oceans, mountains, caves, and dungeons, with NPCs who work, socialize, eat, and pursue routines of their own.",
-        "The adventure combines a non-linear story and branching quests with grid-based party combat, quick-time attacks and defense, typed dialogue questions, and activities such as camping, crafting, building, gathering, and fishing. Progress comes through party composition, visible gear, spells, crafted items, and exploration rather than a single linear path."
+        "World of Anterra is a handcrafted, open-world fantasy RPG by 81monkeys. Its non-linear story follows the Traveller through a world of ancient races, unstable magic, and the mystery of the Eye. Players can pursue quests, question characters, read books, and search the environment for secrets.",
+        "Combat combines strategic movement on a grid with timed attacks and defense, special abilities, spells, and crafted items. The announced adventure also features customizable party members, visible equipment, camping, dynamic weather, and day-night cycles. Steam currently lists the game as coming soon with a 2026 release window."
       ],
       "stats": [
         {
@@ -85,277 +85,257 @@
           "value": "81monkeys"
         },
         {
-          "label": "Platform",
-          "value": "PC via Steam"
+          "label": "Steam platform",
+          "value": "Windows"
         },
         {
           "label": "Genre",
           "value": "Open-World RPG"
         },
         {
-          "label": "Release",
-          "value": "2026 Window"
+          "label": "Steam window",
+          "value": "2026"
         },
         {
           "label": "Combat",
-          "value": "Grid-Based Party"
-        },
-        {
-          "label": "World",
-          "value": "Handcrafted"
+          "value": "Grid-Based"
         },
         {
           "label": "Co-op",
-          "value": "Online Planned"
+          "value": "Listed on Steam"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
-      "title": "Explore World of Anterra Wiki",
-      "description": "Eight focused guides cover the systems that matter most: starting out, release details, combat, character building, quests, exploration, crafting, and co-op.",
+      "title": "Explore World of Anterra Guides",
+      "description": "Browse eight topics covering how the adventure plays, its story and world, release plans, and co-op.",
       "modules": [
         {
           "order": 1,
           "name": "World of Anterra Beginner Guide",
-          "description": "Start with optional tutorials, gather early food and materials, test combat safely, and build habits that carry through the first dungeon.",
-          "href": "/guide/world-of-anterra-beginner-guide",
+          "description": "Introduce new players to exploration, conversations, party setup, and the combat systems described for this open-world RPG.",
+          "href": "/guide/world-of-anterra-gameplay",
           "displayType": "step-by-step",
           "highlights": [
             {
               "label": "1",
-              "detail": "Follow the first tutorial prompt, then test skipping the next to learn how optional guidance works."
+              "detail": "Meet the Traveller and the non-linear story at the heart of the adventure."
             },
             {
               "label": "2",
-              "detail": "Pick up berries, trim bushes, and check containers around the starting area before moving inward."
+              "detail": "Explore the world and examine the environment for clues and secrets."
             },
             {
               "label": "3",
-              "detail": "Walk the outer edge of the starting zone to learn where safe ground ends."
+              "detail": "Ask characters questions and read books to learn about Anterra."
             },
             {
               "label": "4",
-              "detail": "Practice movement, dodge, and stamina away from enemies so the controls feel natural."
+              "detail": "Learn how grid movement and timed actions work in combat."
             },
             {
               "label": "5",
-              "detail": "Take one easy fight and one risky fight to calibrate damage, retreat timing, and consumable value."
+              "detail": "Review special abilities, magic spells, and crafted items as combat options."
             },
             {
               "label": "6",
-              "detail": "Open every menu, memorize three landmarks, and rest before entering caves or crypts."
+              "detail": "Explore party customization and visible gear before planning a build."
             }
           ]
         },
         {
           "order": 2,
           "name": "World of Anterra Release Date and Demo",
-          "description": "Track the Steam release window, demo plans, supported platforms, and official announcements for World of Anterra in one place.",
+          "description": "Track the Steam release window, store status, and official announcements about when World of Anterra can be played.",
           "href": "/guide/world-of-anterra-release-date",
           "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Steam",
-              "detail": "Wishlist and follow the official store page for launch notifications."
-            },
-            {
               "label": "2026",
-              "detail": "The Steam listing shows a 2026 release window for World of Anterra."
+              "detail": "The current Steam listing gives 2026 as its release window."
             },
             {
-              "label": "Demo",
-              "detail": "An alpha demo is planned for select backers on PC."
+              "label": "Steam",
+              "detail": "The store lists World of Anterra as coming soon and offers a wishlist option."
             },
             {
-              "label": "Platforms",
-              "detail": "PC via Steam is confirmed, with desktop and console releases planned."
+              "label": "BackerKit",
+              "detail": "The official site links to a pre-order offer through BackerKit."
+            },
+            {
+              "label": "Updates",
+              "detail": "Check the Steam page and developer announcements for a dated release or demo notice."
             }
           ]
         },
         {
           "order": 3,
           "name": "World of Anterra Gameplay Mechanics",
-          "description": "Understand how handcrafted exploration, non-linear quests, grid combat, quick-time actions, dialogue, and activities fit together.",
+          "description": "Explore grid-based combat, quick-time actions, non-linear quests, dialogue, and the game’s living world.",
           "href": "/guide/world-of-anterra-gameplay",
           "displayType": "card-list",
           "highlights": [
             {
               "label": "Combat",
-              "detail": "Grid positioning sets the tactical layer; timed attacks and defense decide execution."
+              "detail": "Grid movement works alongside timed attacks and defense."
             },
             {
               "label": "Quests",
-              "detail": "Branching quests and a non-linear story let you follow leads in your own order."
-            },
-            {
-              "label": "Crafting",
-              "detail": "Gathering, camping, building, cooking, and fishing feed gear and consumables."
+              "detail": "The story and quests follow a non-linear structure."
             },
             {
               "label": "Dialogue",
-              "detail": "Ask NPCs questions, including typed queries, to uncover lore and quest hooks."
+              "detail": "Questions and conversations help uncover the world’s mysteries."
+            },
+            {
+              "label": "Gear",
+              "detail": "Items and equipment appear on customized party members."
             },
             {
               "label": "World",
-              "detail": "A living world runs on NPC routines, weather, lighting, and day-night cycles."
-            },
-            {
-              "label": "Loot",
-              "detail": "Search containers and breakable objects for supplies and hidden passages."
+              "detail": "Weather, day-night cycles, and lighting shape the setting."
             }
           ]
         },
         {
           "order": 4,
           "name": "World of Anterra Character Customization",
-          "description": "Plan a flexible hero around party roles, visible gear layers, dialogue options, and the activities that support long expeditions.",
-          "href": "/mechanics/world-of-anterra-character-creation",
+          "description": "Explore party members, their equipment, and the animation layering system that brings visible gear to life.",
+          "href": "/guide/world-of-anterra-gameplay",
           "displayType": "tier-grid",
           "highlights": [
             {
               "label": "S",
-              "detail": "Combat role — choose one specialty that creates openings for the rest of the party."
+              "detail": "Start with the party members you want to customize."
             },
             {
               "label": "A",
-              "detail": "Non-combat skill — cover dialogue, gathering, crafting, or exploration gaps."
+              "detail": "Explore the wide range of items and gear described for party members."
             },
             {
               "label": "B",
-              "detail": "Gear plan — use layered equipment to reinforce the role and stay flexible."
+              "detail": "See how the animation layering system displays equipped gear."
             },
             {
               "label": "C",
-              "detail": "Appearance — customize sprites, clothing, and accessories without changing the plan."
+              "detail": "Compare how the same visual system applies to NPCs and creatures."
             }
           ]
         },
         {
           "order": 5,
           "name": "World of Anterra Quests and Story",
-          "description": "Follow the non-linear story through branching quests, typed conversations, world history, ancient races, and the mystery of the Eye.",
-          "href": "/mechanics/world-of-anterra-open-world-rpg-adventure",
+          "description": "Follow the non-linear story, investigate the Eye, and uncover lore through questions, books, and exploration.",
+          "href": "/guide/world-of-anterra-gameplay",
           "displayType": "card-list",
           "highlights": [
             {
-              "label": "Choices",
-              "detail": "Quest paths diverge, so decisions about where to go and whom to trust shape the journey."
+              "label": "Traveller",
+              "detail": "A prophecy places the Traveller at the center of the story."
+            },
+            {
+              "label": "Eye",
+              "detail": "The truth about the Eye is a central mystery."
+            },
+            {
+              "label": "Quests",
+              "detail": "The story and quests are designed without a single linear path."
             },
             {
               "label": "Lore",
-              "detail": "Books, rumors, and environmental clues reveal magic's origins and the Eye of Anterra."
-            },
-            {
-              "label": "NPCs",
-              "detail": "NPCs work, socialize, eat, and pursue hobbies on their own daily routines."
+              "detail": "Books and conversations reveal magic and ancient races."
             },
             {
               "label": "Secrets",
-              "detail": "Crypts, caves, houses, and breakable objects hide loot and side stories."
-            },
-            {
-              "label": "Dialogue",
-              "detail": "Type your own questions to pull directions, context, and quest hooks from conversations."
+              "detail": "Environmental interactions can uncover hidden details."
             }
           ]
         },
         {
           "order": 6,
           "name": "World of Anterra World Exploration",
-          "description": "Explore a handcrafted world of continents, oceans, mountains, caves, crypts, dungeons, towns, and hidden secrets.",
-          "href": "/media/world-of-anterra-environment-generation",
+          "description": "Discover a handcrafted world of settlements, caves, crypts, hidden objects, and changing weather.",
+          "href": "/guide/world-of-anterra-gameplay",
           "displayType": "card-list",
           "highlights": [
             {
-              "label": "Towns",
-              "detail": "Taverns, shops, and NPC routines make settlements useful stops between expeditions."
+              "label": "Crypts",
+              "detail": "Crypts, caves, and houses are places to investigate."
             },
             {
-              "label": "Caves",
-              "detail": "Tight spaces reward careful positioning, lighting awareness, and a clear retreat route."
+              "label": "Objects",
+              "detail": "Containers and breakable objects can conceal secrets."
             },
             {
-              "label": "Coasts",
-              "detail": "Oceans, rivers, and water shaders create landmarks and routes across the map."
+              "label": "Rest",
+              "detail": "Friendly taverns and camps offer pauses between journeys."
             },
             {
               "label": "Weather",
-              "detail": "Dynamic weather and day-night cycles change visibility, mood, and travel planning."
+              "detail": "Dynamic weather and day-night cycles shape the world."
             },
             {
-              "label": "Secrets",
-              "detail": "Breakable objects, containers, and unstable magic zones hide optional discoveries."
-            },
-            {
-              "label": "Travel",
-              "detail": "Pick landmarks, rest before long trips, and scout the outer edge of each new region."
+              "label": "Clues",
+              "detail": "Questions, books, and exploration reveal Anterra’s history."
             }
           ]
         },
         {
           "order": 7,
           "name": "World of Anterra Crafting and Progression",
-          "description": "Turn gathered resources into consumables, gear, camp supplies, and building projects while strengthening the whole party.",
+          "description": "Learn how crafted items, gear, special abilities, and spells contribute to character growth and combat.",
           "href": "/guide/world-of-anterra-gameplay",
           "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Gather",
-              "detail": "Collect berries, materials, and creature drops while exploring each region."
+              "label": "Items",
+              "detail": "Crafted items are among the tools described for combat."
             },
             {
-              "label": "Craft",
-              "detail": "Produce healing items, tools, and gear before entering a dungeon."
+              "label": "Gear",
+              "detail": "A wide range of equipment supports party customization."
             },
             {
-              "label": "Camp",
-              "detail": "Rest at camps or taverns to recover before a long expedition."
+              "label": "Abilities",
+              "detail": "Special abilities are part of the combat system."
             },
             {
-              "label": "Build",
-              "detail": "Invest gathered resources in building projects and long-term base support."
+              "label": "Magic",
+              "detail": "Spells offer another option alongside movement and items."
             },
             {
-              "label": "Upgrade",
-              "detail": "Prioritize frontline gear, then cover spells, consumables, and utility options."
-            },
-            {
-              "label": "Explore",
-              "detail": "Treat discovery as progression: recipes, shortcuts, and lore unlock new choices."
+              "label": "Growth",
+              "detail": "Character progression is a core part of the announced RPG."
             }
           ]
         },
         {
           "order": 8,
           "name": "World of Anterra Multiplayer and Co-op",
-          "description": "Review the single-player adventure, the studio's online co-op plans, and the official channels that carry multiplayer updates.",
-          "href": "/guide/world-of-anterra-news",
+          "description": "Review the single-player and co-op modes listed on Steam alongside the game’s current platform information.",
+          "href": "/guide/world-of-anterra-gameplay",
           "displayType": "card-list",
           "highlights": [
             {
               "label": "Solo",
-              "detail": "The campaign is built around one player controlling a handcrafted party."
+              "detail": "Steam lists a single-player mode."
             },
             {
-              "label": "Co-op",
-              "detail": "Online cooperative play is planned alongside the single-player adventure."
+              "label": "Online",
+              "detail": "Online co-op appears among Steam’s listed features."
             },
             {
-              "label": "Party",
-              "detail": "Party members are characters you build and control, not separate online players."
+              "label": "Local",
+              "detail": "Steam also lists shared and split-screen co-op."
             },
             {
-              "label": "Updates",
-              "detail": "Follow official Steam news and developer firesides for mode and player-count details."
+              "label": "Remote",
+              "detail": "Remote Play Together appears on the Steam listing."
             },
             {
-              "label": "Platforms",
-              "detail": "Desktop and console releases are planned; PC via Steam is the confirmed storefront."
-            },
-            {
-              "label": "Share",
-              "detail": "Couch co-pilot sessions and parallel playthroughs let friends compare choices and builds."
+              "label": "Windows",
+              "detail": "The current Steam platform listing includes Windows."
             }
           ]
         }
@@ -363,27 +343,27 @@
     },
     "faq": {
       "title": "World of Anterra FAQ",
-      "description": "Answers to common questions about World of Anterra, from release timing and platforms to combat, classes, and co-op.",
+      "description": "Answers about World of Anterra gameplay, release plans, platforms, and co-op.",
       "items": [
         {
           "question": "What is World of Anterra?",
-          "answer": "World of Anterra is a handcrafted pixel-art open-world RPG from 81monkeys. It combines a non-linear story, branching quests, grid-based party combat with quick-time actions, typed dialogue questions, and activities such as camping, crafting, building, gathering, and fishing."
+          "answer": "World of Anterra is a handcrafted open-world RPG by 81monkeys. It features a non-linear story, exploration, party customization, and grid-based combat with quick-time actions."
         },
         {
-          "question": "When is the World of Anterra release date?",
-          "answer": "The World of Anterra Steam page lists a 2026 release window. Wishlist and follow the official store page for the firm launch date and any demo announcements."
+          "question": "When is World of Anterra releasing?",
+          "answer": "The current Steam listing marks World of Anterra as coming soon and gives 2026 as its release window. It does not list a specific month or day."
         },
         {
-          "question": "Which platforms will World of Anterra support?",
-          "answer": "PC via Steam is the confirmed World of Anterra storefront. The developer is also targeting desktop and console releases, with backers choosing their preferred platform."
+          "question": "Which platforms are listed for World of Anterra?",
+          "answer": "Steam currently lists a Windows version of World of Anterra. The developer’s official site also describes the project as Desktop & Console without naming individual console models on its homepage."
         },
         {
           "question": "How does combat work in World of Anterra?",
-          "answer": "World of Anterra combat uses a grid for positioning and quick-time inputs for attacks and defense. Harder fights reward weakness exploitation, environmental hazards, rare consumables, and a party built around clear roles."
+          "answer": "World of Anterra combines timed attacks and defense with strategic movement on a grid. The announced combat options include special abilities, magic spells, and crafted items."
         },
         {
-          "question": "Does World of Anterra have co-op?",
-          "answer": "Online co-op is planned alongside the World of Anterra single-player campaign. Follow official Steam news and developer firesides for mode details, player counts, and launch timing."
+          "question": "Does World of Anterra support co-op?",
+          "answer": "The World of Anterra Steam page lists online co-op, shared and split-screen co-op, and Remote Play Together alongside single-player. It does not specify how much of the campaign each mode covers."
         }
       ]
     },
